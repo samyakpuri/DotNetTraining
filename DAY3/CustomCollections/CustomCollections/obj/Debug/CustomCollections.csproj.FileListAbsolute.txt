@@ -1,0 +1,6 @@
+C:\Users\spuri4\Desktop\Training\DAY3\CustomCollections\CustomCollections\bin\Debug\CustomCollections.exe.config
+C:\Users\spuri4\Desktop\Training\DAY3\CustomCollections\CustomCollections\obj\Debug\CustomCollections.csprojResolveAssemblyReference.cache
+C:\Users\spuri4\Desktop\Training\DAY3\CustomCollections\CustomCollections\bin\Debug\CustomCollections.exe
+C:\Users\spuri4\Desktop\Training\DAY3\CustomCollections\CustomCollections\bin\Debug\CustomCollections.pdb
+C:\Users\spuri4\Desktop\Training\DAY3\CustomCollections\CustomCollections\obj\Debug\CustomCollections.exe
+C:\Users\spuri4\Desktop\Training\DAY3\CustomCollections\CustomCollections\obj\Debug\CustomCollections.pdb

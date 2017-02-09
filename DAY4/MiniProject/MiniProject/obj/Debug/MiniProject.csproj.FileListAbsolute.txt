@@ -1,0 +1,9 @@
+C:\Users\spuri4\Desktop\Training\DAY4\MiniProject\MiniProject\bin\Debug\MiniProject.exe.config
+C:\Users\spuri4\Desktop\Training\DAY4\MiniProject\MiniProject\bin\Debug\MiniProject.exe
+C:\Users\spuri4\Desktop\Training\DAY4\MiniProject\MiniProject\bin\Debug\MiniProject.pdb
+C:\Users\spuri4\Desktop\Training\DAY4\MiniProject\MiniProject\obj\Debug\MiniProject.csprojResolveAssemblyReference.cache
+C:\Users\spuri4\Desktop\Training\DAY4\MiniProject\MiniProject\obj\Debug\MiniProject.Form1.resources
+C:\Users\spuri4\Desktop\Training\DAY4\MiniProject\MiniProject\obj\Debug\MiniProject.Properties.Resources.resources
+C:\Users\spuri4\Desktop\Training\DAY4\MiniProject\MiniProject\obj\Debug\MiniProject.csproj.GenerateResource.Cache
+C:\Users\spuri4\Desktop\Training\DAY4\MiniProject\MiniProject\obj\Debug\MiniProject.exe
+C:\Users\spuri4\Desktop\Training\DAY4\MiniProject\MiniProject\obj\Debug\MiniProject.pdb

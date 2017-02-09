@@ -1,0 +1,5 @@
+C:\Users\spuri4\Desktop\Training\DAY5\DllDisplay\TestLib\bin\Debug\TestLib.dll
+C:\Users\spuri4\Desktop\Training\DAY5\DllDisplay\TestLib\bin\Debug\TestLib.pdb
+C:\Users\spuri4\Desktop\Training\DAY5\DllDisplay\TestLib\obj\Debug\TestLib.csprojResolveAssemblyReference.cache
+C:\Users\spuri4\Desktop\Training\DAY5\DllDisplay\TestLib\obj\Debug\TestLib.dll
+C:\Users\spuri4\Desktop\Training\DAY5\DllDisplay\TestLib\obj\Debug\TestLib.pdb

@@ -1,0 +1,36 @@
+C:\Users\spuri4\Desktop\Training\DAY7\MVCHeadStart\MVCHeadStart\bin\MVCHeadStart.dll.config
+C:\Users\spuri4\Desktop\Training\DAY7\MVCHeadStart\MVCHeadStart\bin\MVCHeadStart.dll
+C:\Users\spuri4\Desktop\Training\DAY7\MVCHeadStart\MVCHeadStart\bin\MVCHeadStart.pdb
+C:\Users\spuri4\Desktop\Training\DAY7\MVCHeadStart\MVCHeadStart\bin\System.Web.Helpers.dll
+C:\Users\spuri4\Desktop\Training\DAY7\MVCHeadStart\MVCHeadStart\bin\System.Web.Mvc.dll
+C:\Users\spuri4\Desktop\Training\DAY7\MVCHeadStart\MVCHeadStart\bin\System.Web.Razor.dll
+C:\Users\spuri4\Desktop\Training\DAY7\MVCHeadStart\MVCHeadStart\bin\System.Web.Webpages.Deployment.dll
+C:\Users\spuri4\Desktop\Training\DAY7\MVCHeadStart\MVCHeadStart\bin\System.Web.Webpages.dll
+C:\Users\spuri4\Desktop\Training\DAY7\MVCHeadStart\MVCHeadStart\bin\System.Web.Webpages.Razor.dll
+C:\Users\spuri4\Desktop\Training\DAY7\MVCHeadStart\MVCHeadStart\bin\System.Web.Razor.xml
+C:\Users\spuri4\Desktop\Training\DAY7\MVCHeadStart\MVCHeadStart\bin\System.Web.Webpages.xml
+C:\Users\spuri4\Desktop\Training\DAY7\MVCHeadStart\MVCHeadStart\bin\System.Web.Webpages.Deployment.xml
+C:\Users\spuri4\Desktop\Training\DAY7\MVCHeadStart\MVCHeadStart\bin\System.Web.Webpages.Razor.xml
+C:\Users\spuri4\Desktop\Training\DAY7\MVCHeadStart\MVCHeadStart\bin\System.Web.Helpers.xml
+C:\Users\spuri4\Desktop\Training\DAY7\MVCHeadStart\MVCHeadStart\bin\System.Web.Mvc.xml
+C:\Users\spuri4\Desktop\Training\DAY7\MVCHeadStart\MVCHeadStart\obj\Debug\MVCHeadStart.csprojResolveAssemblyReference.cache
+C:\Users\spuri4\Desktop\Training\DAY7\MVCHeadStart\MVCHeadStart\obj\Debug\MVCHeadStart.dll
+C:\Users\spuri4\Desktop\Training\DAY7\MVCHeadStart\MVCHeadStart\obj\Debug\MVCHeadStart.pdb
+C:\Users\spuri4\Box Sync\Training\DAY8\MVCHeadStart\MVCHeadStart\bin\MVCHeadStart.dll.config
+C:\Users\spuri4\Box Sync\Training\DAY8\MVCHeadStart\MVCHeadStart\bin\MVCHeadStart.dll
+C:\Users\spuri4\Box Sync\Training\DAY8\MVCHeadStart\MVCHeadStart\bin\MVCHeadStart.pdb
+C:\Users\spuri4\Box Sync\Training\DAY8\MVCHeadStart\MVCHeadStart\bin\System.Web.Helpers.dll
+C:\Users\spuri4\Box Sync\Training\DAY8\MVCHeadStart\MVCHeadStart\bin\System.Web.Mvc.dll
+C:\Users\spuri4\Box Sync\Training\DAY8\MVCHeadStart\MVCHeadStart\bin\System.Web.Razor.dll
+C:\Users\spuri4\Box Sync\Training\DAY8\MVCHeadStart\MVCHeadStart\bin\System.Web.Webpages.Deployment.dll
+C:\Users\spuri4\Box Sync\Training\DAY8\MVCHeadStart\MVCHeadStart\bin\System.Web.Webpages.dll
+C:\Users\spuri4\Box Sync\Training\DAY8\MVCHeadStart\MVCHeadStart\bin\System.Web.Webpages.Razor.dll
+C:\Users\spuri4\Box Sync\Training\DAY8\MVCHeadStart\MVCHeadStart\bin\System.Web.Razor.xml
+C:\Users\spuri4\Box Sync\Training\DAY8\MVCHeadStart\MVCHeadStart\bin\System.Web.Webpages.xml
+C:\Users\spuri4\Box Sync\Training\DAY8\MVCHeadStart\MVCHeadStart\bin\System.Web.Webpages.Deployment.xml
+C:\Users\spuri4\Box Sync\Training\DAY8\MVCHeadStart\MVCHeadStart\bin\System.Web.Webpages.Razor.xml
+C:\Users\spuri4\Box Sync\Training\DAY8\MVCHeadStart\MVCHeadStart\bin\System.Web.Helpers.xml
+C:\Users\spuri4\Box Sync\Training\DAY8\MVCHeadStart\MVCHeadStart\bin\System.Web.Mvc.xml
+C:\Users\spuri4\Box Sync\Training\DAY8\MVCHeadStart\MVCHeadStart\obj\Debug\MVCHeadStart.csprojResolveAssemblyReference.cache
+C:\Users\spuri4\Box Sync\Training\DAY8\MVCHeadStart\MVCHeadStart\obj\Debug\MVCHeadStart.dll
+C:\Users\spuri4\Box Sync\Training\DAY8\MVCHeadStart\MVCHeadStart\obj\Debug\MVCHeadStart.pdb

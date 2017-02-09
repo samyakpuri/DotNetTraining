@@ -1,0 +1,7 @@
+C:\Users\spuri4\Desktop\Training\DAY4\AdvancedCollection\AdvancedCollection.Test\bin\Debug\AdvancedCollection.Test.dll
+C:\Users\spuri4\Desktop\Training\DAY4\AdvancedCollection\AdvancedCollection.Test\bin\Debug\AdvancedCollection.Test.pdb
+C:\Users\spuri4\Desktop\Training\DAY4\AdvancedCollection\AdvancedCollection.Test\bin\Debug\AdvancedCollection.exe
+C:\Users\spuri4\Desktop\Training\DAY4\AdvancedCollection\AdvancedCollection.Test\bin\Debug\AdvancedCollection.pdb
+C:\Users\spuri4\Desktop\Training\DAY4\AdvancedCollection\AdvancedCollection.Test\obj\Debug\AdvancedCollection.Test.csprojResolveAssemblyReference.cache
+C:\Users\spuri4\Desktop\Training\DAY4\AdvancedCollection\AdvancedCollection.Test\obj\Debug\AdvancedCollection.Test.dll
+C:\Users\spuri4\Desktop\Training\DAY4\AdvancedCollection\AdvancedCollection.Test\obj\Debug\AdvancedCollection.Test.pdb

@@ -1,0 +1,10 @@
+C:\Users\spuri4\Desktop\Training\DAY5\DllDisplay\DllDisplay\bin\Debug\DllDisplay.exe.config
+C:\Users\spuri4\Desktop\Training\DAY5\DllDisplay\DllDisplay\obj\Debug\DllDisplay.csprojResolveAssemblyReference.cache
+C:\Users\spuri4\Desktop\Training\DAY5\DllDisplay\DllDisplay\obj\Debug\DllDisplay.Form1.resources
+C:\Users\spuri4\Desktop\Training\DAY5\DllDisplay\DllDisplay\obj\Debug\DllDisplay.Properties.Resources.resources
+C:\Users\spuri4\Desktop\Training\DAY5\DllDisplay\DllDisplay\obj\Debug\DllDisplay.csproj.GenerateResource.Cache
+C:\Users\spuri4\Desktop\Training\DAY5\DllDisplay\DllDisplay\bin\Debug\DllDisplay.exe
+C:\Users\spuri4\Desktop\Training\DAY5\DllDisplay\DllDisplay\bin\Debug\DllDisplay.pdb
+C:\Users\spuri4\Desktop\Training\DAY5\DllDisplay\DllDisplay\obj\Debug\DllDisplay.exe
+C:\Users\spuri4\Desktop\Training\DAY5\DllDisplay\DllDisplay\obj\Debug\DllDisplay.pdb
+C:\Users\spuri4\Desktop\Training\DAY5\DllDisplay\DllDisplay\obj\Debug\DllDisplay.ParameterControl.resources

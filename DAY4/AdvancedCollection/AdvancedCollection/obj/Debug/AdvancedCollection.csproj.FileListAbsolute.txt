@@ -1,0 +1,9 @@
+C:\Users\spuri4\Desktop\Training\DAY4\AdvancedCollection\AdvancedCollection\bin\Debug\AdvancedCollection.exe.config
+C:\Users\spuri4\Desktop\Training\DAY4\AdvancedCollection\AdvancedCollection\bin\Debug\AdvancedCollection.exe
+C:\Users\spuri4\Desktop\Training\DAY4\AdvancedCollection\AdvancedCollection\bin\Debug\AdvancedCollection.pdb
+C:\Users\spuri4\Desktop\Training\DAY4\AdvancedCollection\AdvancedCollection\obj\Debug\AdvancedCollection.csprojResolveAssemblyReference.cache
+C:\Users\spuri4\Desktop\Training\DAY4\AdvancedCollection\AdvancedCollection\obj\Debug\AdvancedCollection.Form1.resources
+C:\Users\spuri4\Desktop\Training\DAY4\AdvancedCollection\AdvancedCollection\obj\Debug\AdvancedCollection.Properties.Resources.resources
+C:\Users\spuri4\Desktop\Training\DAY4\AdvancedCollection\AdvancedCollection\obj\Debug\AdvancedCollection.csproj.GenerateResource.Cache
+C:\Users\spuri4\Desktop\Training\DAY4\AdvancedCollection\AdvancedCollection\obj\Debug\AdvancedCollection.exe
+C:\Users\spuri4\Desktop\Training\DAY4\AdvancedCollection\AdvancedCollection\obj\Debug\AdvancedCollection.pdb

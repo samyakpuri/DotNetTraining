@@ -1,0 +1,9 @@
+C:\Users\spuri4\Desktop\Training\DAY6\FileStreamUsage\FileStreamUsage\bin\Debug\FileStreamUsage.exe.config
+C:\Users\spuri4\Desktop\Training\DAY6\FileStreamUsage\FileStreamUsage\obj\Debug\FileStreamUsage.csprojResolveAssemblyReference.cache
+C:\Users\spuri4\Desktop\Training\DAY6\FileStreamUsage\FileStreamUsage\obj\Debug\FileStreamUsage.Form1.resources
+C:\Users\spuri4\Desktop\Training\DAY6\FileStreamUsage\FileStreamUsage\obj\Debug\FileStreamUsage.Properties.Resources.resources
+C:\Users\spuri4\Desktop\Training\DAY6\FileStreamUsage\FileStreamUsage\obj\Debug\FileStreamUsage.csproj.GenerateResource.Cache
+C:\Users\spuri4\Desktop\Training\DAY6\FileStreamUsage\FileStreamUsage\bin\Debug\FileStreamUsage.exe
+C:\Users\spuri4\Desktop\Training\DAY6\FileStreamUsage\FileStreamUsage\bin\Debug\FileStreamUsage.pdb
+C:\Users\spuri4\Desktop\Training\DAY6\FileStreamUsage\FileStreamUsage\obj\Debug\FileStreamUsage.exe
+C:\Users\spuri4\Desktop\Training\DAY6\FileStreamUsage\FileStreamUsage\obj\Debug\FileStreamUsage.pdb

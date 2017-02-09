@@ -1,0 +1,12 @@
+C:\Users\samya\Documents\Visual Studio 2015\Projects\explorer\explorer\bin\Debug\explorer.exe.config
+C:\Users\samya\Documents\Visual Studio 2015\Projects\explorer\explorer\obj\Debug\explorer.csprojResolveAssemblyReference.cache
+C:\Users\samya\Documents\Visual Studio 2015\Projects\explorer\explorer\obj\Debug\explorer.Form1.resources
+C:\Users\samya\Documents\Visual Studio 2015\Projects\explorer\explorer\obj\Debug\explorer.Properties.Resources.resources
+C:\Users\samya\Documents\Visual Studio 2015\Projects\explorer\explorer\obj\Debug\explorer.csproj.GenerateResource.Cache
+C:\Users\samya\Documents\Visual Studio 2015\Projects\explorer\explorer\bin\Debug\explorer.exe
+C:\Users\samya\Documents\Visual Studio 2015\Projects\explorer\explorer\bin\Debug\explorer.pdb
+C:\Users\samya\Documents\Visual Studio 2015\Projects\explorer\explorer\obj\Debug\explorer.exe
+C:\Users\samya\Documents\Visual Studio 2015\Projects\explorer\explorer\obj\Debug\explorer.pdb
+C:\Users\spuri4\Box Sync\Training\explorer\explorer\bin\Debug\explorer.exe.config
+C:\Users\spuri4\Box Sync\Training\explorer\explorer\obj\Debug\explorer.exe
+C:\Users\spuri4\Box Sync\Training\explorer\explorer\obj\Debug\explorer.pdb

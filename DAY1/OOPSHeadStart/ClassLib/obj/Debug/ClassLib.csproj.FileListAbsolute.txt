@@ -1,0 +1,4 @@
+C:\Users\spuri4\Desktop\OOPS\DAY1\OOPSHeadStart\ClassLib\bin\Debug\ClassLib.dll
+C:\Users\spuri4\Desktop\OOPS\DAY1\OOPSHeadStart\ClassLib\bin\Debug\ClassLib.pdb
+C:\Users\spuri4\Desktop\OOPS\DAY1\OOPSHeadStart\ClassLib\obj\Debug\ClassLib.dll
+C:\Users\spuri4\Desktop\OOPS\DAY1\OOPSHeadStart\ClassLib\obj\Debug\ClassLib.pdb

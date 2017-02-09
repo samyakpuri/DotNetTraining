@@ -1,0 +1,9 @@
+C:\Users\spuri4\Box Sync\Training\DAY7\AdoBasics\AdoBasics\bin\Debug\AdoBasics.exe.config
+C:\Users\spuri4\Box Sync\Training\DAY7\AdoBasics\AdoBasics\obj\Debug\AdoBasics.csprojResolveAssemblyReference.cache
+C:\Users\spuri4\Box Sync\Training\DAY7\AdoBasics\AdoBasics\obj\Debug\AdoBasics.Form1.resources
+C:\Users\spuri4\Box Sync\Training\DAY7\AdoBasics\AdoBasics\obj\Debug\AdoBasics.Properties.Resources.resources
+C:\Users\spuri4\Box Sync\Training\DAY7\AdoBasics\AdoBasics\obj\Debug\AdoBasics.csproj.GenerateResource.Cache
+C:\Users\spuri4\Box Sync\Training\DAY7\AdoBasics\AdoBasics\bin\Debug\AdoBasics.exe
+C:\Users\spuri4\Box Sync\Training\DAY7\AdoBasics\AdoBasics\bin\Debug\AdoBasics.pdb
+C:\Users\spuri4\Box Sync\Training\DAY7\AdoBasics\AdoBasics\obj\Debug\AdoBasics.exe
+C:\Users\spuri4\Box Sync\Training\DAY7\AdoBasics\AdoBasics\obj\Debug\AdoBasics.pdb

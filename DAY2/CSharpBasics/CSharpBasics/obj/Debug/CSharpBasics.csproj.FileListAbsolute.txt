@@ -1,0 +1,9 @@
+C:\Users\spuri4\Desktop\Training\DAY2\CSharpBasics\CSharpBasics\bin\Debug\CSharpBasics.exe.config
+C:\Users\spuri4\Desktop\Training\DAY2\CSharpBasics\CSharpBasics\bin\Debug\CSharpBasics.exe
+C:\Users\spuri4\Desktop\Training\DAY2\CSharpBasics\CSharpBasics\bin\Debug\CSharpBasics.pdb
+C:\Users\spuri4\Desktop\Training\DAY2\CSharpBasics\CSharpBasics\obj\Debug\CSharpBasics.csprojResolveAssemblyReference.cache
+C:\Users\spuri4\Desktop\Training\DAY2\CSharpBasics\CSharpBasics\obj\Debug\CSharpBasics.Form1.resources
+C:\Users\spuri4\Desktop\Training\DAY2\CSharpBasics\CSharpBasics\obj\Debug\CSharpBasics.Properties.Resources.resources
+C:\Users\spuri4\Desktop\Training\DAY2\CSharpBasics\CSharpBasics\obj\Debug\CSharpBasics.csproj.GenerateResource.Cache
+C:\Users\spuri4\Desktop\Training\DAY2\CSharpBasics\CSharpBasics\obj\Debug\CSharpBasics.exe
+C:\Users\spuri4\Desktop\Training\DAY2\CSharpBasics\CSharpBasics\obj\Debug\CSharpBasics.pdb

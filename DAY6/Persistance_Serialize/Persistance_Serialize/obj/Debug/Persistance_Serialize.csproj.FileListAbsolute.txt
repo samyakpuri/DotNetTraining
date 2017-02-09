@@ -1,0 +1,9 @@
+C:\Users\spuri4\Desktop\Training\DAY6\Persistance_Serialize\Persistance_Serialize\bin\Debug\Persistance_Serialize.exe.config
+C:\Users\spuri4\Desktop\Training\DAY6\Persistance_Serialize\Persistance_Serialize\obj\Debug\Persistance_Serialize.csprojResolveAssemblyReference.cache
+C:\Users\spuri4\Desktop\Training\DAY6\Persistance_Serialize\Persistance_Serialize\obj\Debug\Persistance_Serialize.Form1.resources
+C:\Users\spuri4\Desktop\Training\DAY6\Persistance_Serialize\Persistance_Serialize\obj\Debug\Persistance_Serialize.Properties.Resources.resources
+C:\Users\spuri4\Desktop\Training\DAY6\Persistance_Serialize\Persistance_Serialize\obj\Debug\Persistance_Serialize.csproj.GenerateResource.Cache
+C:\Users\spuri4\Desktop\Training\DAY6\Persistance_Serialize\Persistance_Serialize\bin\Debug\Persistance_Serialize.exe
+C:\Users\spuri4\Desktop\Training\DAY6\Persistance_Serialize\Persistance_Serialize\bin\Debug\Persistance_Serialize.pdb
+C:\Users\spuri4\Desktop\Training\DAY6\Persistance_Serialize\Persistance_Serialize\obj\Debug\Persistance_Serialize.exe
+C:\Users\spuri4\Desktop\Training\DAY6\Persistance_Serialize\Persistance_Serialize\obj\Debug\Persistance_Serialize.pdb

@@ -1,0 +1,8 @@
+C:\Users\spuri4\Desktop\OOPS\DAY1\OOPSHeadStart\OOPSHeadStart\bin\Debug\OOPSHeadStart.exe.config
+C:\Users\spuri4\Desktop\OOPS\DAY1\OOPSHeadStart\OOPSHeadStart\bin\Debug\OOPSHeadStart.exe
+C:\Users\spuri4\Desktop\OOPS\DAY1\OOPSHeadStart\OOPSHeadStart\bin\Debug\OOPSHeadStart.pdb
+C:\Users\spuri4\Desktop\OOPS\DAY1\OOPSHeadStart\OOPSHeadStart\obj\Debug\OOPSHeadStart.csprojResolveAssemblyReference.cache
+C:\Users\spuri4\Desktop\OOPS\DAY1\OOPSHeadStart\OOPSHeadStart\obj\Debug\OOPSHeadStart.exe
+C:\Users\spuri4\Desktop\OOPS\DAY1\OOPSHeadStart\OOPSHeadStart\obj\Debug\OOPSHeadStart.pdb
+C:\Users\spuri4\Desktop\OOPS\DAY1\OOPSHeadStart\OOPSHeadStart\bin\Debug\ClassLib.dll
+C:\Users\spuri4\Desktop\OOPS\DAY1\OOPSHeadStart\OOPSHeadStart\bin\Debug\ClassLib.pdb
