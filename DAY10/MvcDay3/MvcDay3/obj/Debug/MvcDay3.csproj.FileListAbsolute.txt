@@ -16,3 +16,8 @@ C:\Users\spuri4\Box Sync\Training\DAY10\MvcDay3\MvcDay3\bin\System.Web.Mvc.xml
 C:\Users\spuri4\Box Sync\Training\DAY10\MvcDay3\MvcDay3\obj\Debug\MvcDay3.csprojResolveAssemblyReference.cache
 C:\Users\spuri4\Box Sync\Training\DAY10\MvcDay3\MvcDay3\obj\Debug\MvcDay3.dll
 C:\Users\spuri4\Box Sync\Training\DAY10\MvcDay3\MvcDay3\obj\Debug\MvcDay3.pdb
+C:\Users\spuri4\Box Sync\Training\DAY10\MvcDay3\MvcDay3\bin\Antlr3.Runtime.dll
+C:\Users\spuri4\Box Sync\Training\DAY10\MvcDay3\MvcDay3\bin\System.Web.Optimization.dll
+C:\Users\spuri4\Box Sync\Training\DAY10\MvcDay3\MvcDay3\bin\WebGrease.dll
+C:\Users\spuri4\Box Sync\Training\DAY10\MvcDay3\MvcDay3\bin\Antlr3.Runtime.pdb
+C:\Users\spuri4\Box Sync\Training\DAY10\MvcDay3\MvcDay3\bin\System.Web.Optimization.xml
