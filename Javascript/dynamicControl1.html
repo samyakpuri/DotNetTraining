@@ -1,0 +1,19 @@
+<html>
+<head>
+<script>
+function Test() 
+{
+    var divControl = document.getElementById("div1");
+    var txt = document.createElement("input");
+    txt.setAttribute("type", "text");
+    divControl.appendChild(txt);
+}
+</script>
+<title>Dynamic control creation</title>
+
+<body onLoad="Test()">
+    <div id="div1" tag="MyTag">
+
+    </div>
+</body>
+</html>

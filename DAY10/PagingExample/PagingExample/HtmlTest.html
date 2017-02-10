@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    <span> Value1 </span>
+    <input type="text" name="Val1" id="val1" />
+    <br />
+    <span>Value2</span>
+    <input type="text" name="Val2" id="val2" />
+    <br />
+    <select id="Selection">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+    </select>
+    <button onclick="operation()" value="Operation" id="operation">Operation</button>
+</body>
+<script>
+    function operation(i,j)
+    {
+        var val1 = document.getElementById("val1").value;
+        var val2 = document.getElementById("val2").value;
+        var value1 = parseFloat(val1);
+        var value2 = parseFloat(val2);
+        var oper = document.getElementById("Selection").value;
+        switch(oper)
+        {
+            case "+":
+                alert("Addition: " + (value1 + value2));
+                break;
+            case "-":
+                alert("Subtraction: " + (value1 - value2));
+                break;
+            case "*":
+                alert("Multiplication: " + (value1 * value2));
+                break;
+            case "/":
+                alert("Division: " + (value1 / value2));
+                break;
+        }
+    }
+</script>
+</html>

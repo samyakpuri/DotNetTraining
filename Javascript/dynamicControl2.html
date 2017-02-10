@@ -1,0 +1,35 @@
+<html>
+<head>
+<script>
+function test() 
+{
+    var divControl = document.getElementById("div1");
+    var txt = document.createElement("input");
+    txt.setAttribute("type", "text");
+    txt.setAttribute("value","New box");
+    divControl.appendChild(txt);
+}
+
+function edit()
+{
+    var divControl = document.getElementById("div1");
+    for(i =0; i < divControl.childNodes.length;i++)
+    {
+        var ctrl = divControl.childNodes[i];
+	if(ctrl != undefined && ctrl.nodeName == "INPUT")
+	{
+	    ctrl.setAttribute("value","this is edited text");
+	}
+    }
+}
+
+</script>
+<title>Dynamic control creation</title>
+<body>
+    <div id="div1" tag="MyTag">
+
+    </div>
+    <input type="button" value="Add" onclick="test()" />
+    <input type="button" value="Edit" onclick="edit()" />
+</body>
+</html>
