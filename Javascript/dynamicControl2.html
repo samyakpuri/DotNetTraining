@@ -1,5 +1,27 @@
 <html>
 <head>
+<script
+  src="https://code.jquery.com/jquery-3.1.1.js"
+  integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+  crossorigin="anonymous">
+ </script>
+
+<script type="text/javascript">
+	alert("Width: "+ $(window).width() +" Height: " + $(window).height());
+	$(function() {
+		Test();
+	});
+</script>
+
+<title>Dynamic control creation</title>
+<body>
+    <div id="div1" tag="MyTag">
+
+    </div>
+    <input type="button" value="Add" onclick="test()" />
+    <input type="button" value="Edit" onclick="edit()" />
+</body>
+
 <script>
 function test() 
 {
@@ -16,20 +38,11 @@ function edit()
     for(i =0; i < divControl.childNodes.length;i++)
     {
         var ctrl = divControl.childNodes[i];
-	if(ctrl != undefined && ctrl.nodeName == "INPUT")
-	{
-	    ctrl.setAttribute("value","this is edited text");
+		if(ctrl != undefined && ctrl.nodeName == "INPUT")
+		{
+		    ctrl.setAttribute("value","this is edited text");
+		}
 	}
-    }
 }
-
 </script>
-<title>Dynamic control creation</title>
-<body>
-    <div id="div1" tag="MyTag">
-
-    </div>
-    <input type="button" value="Add" onclick="test()" />
-    <input type="button" value="Edit" onclick="edit()" />
-</body>
 </html>
