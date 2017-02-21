@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript">
+        $(function ()
+        {
+            var url = "api/Person";
+
+            function display(persons)
+            {
+                var divControl = document.getElementById("div1");
+                for (var i = 0; i < persons.length; i++) {
+                    var span = document.createElement("span");
+                    span.innerText = persons[i].Name + " " + persons[i].Id;
+                    var br = document.createElement("br");
+                    divControl.appendChild(span);
+                    divControl.appendChild(br);
+                }
+            }
+
+            $.get(url, function (data, status) {
+                display(data);
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="div1">
+    </div>
+
+    <form method="post" action="api/Person">
+        <input type="text" name="Id" />
+        <input type="text" name="Name" />
+        <input type="text" name="Age" />
+        <input type="submit" value="Add" />
+    </form>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<script
+  src="https://code.jquery.com/jquery-3.1.1.js"
+  integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+  crossorigin="anonymous">
+ </script>
+<head>
+	<title>Object Creation</title>
+</head>
+<body>
+
+<div id="div">
+	<span>ID:</span><input type="text" name="Id" id="txtId" /><br>
+	<span>Name</span><input type="text" name="Name" id="txtName" /><br>
+	<input type="button" name="Add" onclick="cal.add()" value="Add">
+	<input type="button" name="Display" onclick="cal.display()" value="Display">
+</div>
+
+</body>
+<script type="text/javascript">
+	var cal = (function()
+	{
+		var obj = [];
+		
+		function Add()
+		{
+			var obje = { id:$("#txtId").val(), name:$("#txtName").val()};
+			obj.push(obje);
+		}
+
+		function Display()
+		{
+			document.write("<table><tr><th>ID</th><th>Name</th></tr>");
+			for(i in obj)
+			{
+				document.write("<tr><td>"+obj[i].id+"</td><td>"+obj[i].name+"</tr>");
+			}
+			document.write("</table>");
+		}
+		return{
+			add:Add,
+			display:Display
+		};
+	})();
+</script>
+</html>
