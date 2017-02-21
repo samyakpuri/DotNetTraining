@@ -13,5 +13,7 @@ namespace CalculatorLib
         public Status Status { get; set; }
         [DataMember]
         public double Result { get; set; }
+        [DataMember]
+        public int Counter { get; set; }
     }
 }

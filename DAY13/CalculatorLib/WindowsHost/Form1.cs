@@ -21,7 +21,7 @@ namespace WindowsHost
 
         private void btnHost_Click(object sender, EventArgs e)
         {
-            ServiceHost host = new ServiceHost(typeof(CalculatorLib.CalculatorService), 
+            ServiceHost host = new ServiceHost(typeof(CalculatorLib.CalculatorService),
                 new Uri[]
                 {
                     new Uri("http://localhost:33333"),
@@ -31,9 +31,9 @@ namespace WindowsHost
             host.AddServiceEndpoint(typeof(CalculatorLib.ICalculator), new WSHttpBinding(), "WS");
             host.AddServiceEndpoint(typeof(CalculatorLib.ICalculator), new NetTcpBinding(), "Tcp");
 
-            host.Description.Behaviors.Add(new ServiceMetadataBehavior() 
-            { 
-                HttpGetEnabled=true
+            host.Description.Behaviors.Add(new ServiceMetadataBehavior()
+            {
+                HttpGetEnabled = true
             });
 
             host.Open();

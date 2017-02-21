@@ -2,15 +2,15 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.Serialization;
+using System.ServiceModel;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace CalculatorLib
 {
-    [DataContract]
+    [ServiceBehavior(InstanceContextMode = InstanceContextMode.Single)]
     public class CalculatorService : ICalculator, IAdvanceCalculator
     {
-
         public Response Operation(Request request)
         {
             Response response = new Response { Status = Status.Success };
@@ -38,6 +38,8 @@ namespace CalculatorLib
                     response.Status = Status.Failiure;
                     break;
             }
+            int count = response.Counter+1;
+            response.Counter = count;
             return response;
         }
 
