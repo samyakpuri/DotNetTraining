@@ -7,7 +7,7 @@ using System.Text;
 namespace CalculatorLib
 {
     [ServiceContract]
-    interface ICalculator
+    public interface ICalculator
     {
         [OperationContract]
         Response Operation(Request request);
