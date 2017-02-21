@@ -270,9 +270,9 @@
   </wsp:Policy>
   <wsdl:types>
     <xsd:schema targetNamespace="http://tempuri.org/Imports">
-      <xsd:import schemaLocation="http://localhost:54502/CalaculatorService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
-      <xsd:import schemaLocation="http://localhost:54502/CalaculatorService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
-      <xsd:import schemaLocation="http://localhost:54502/CalaculatorService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/CalculatorLib" />
+      <xsd:import schemaLocation="http://localhost:54502/CalculatorService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:54502/CalculatorService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:54502/CalculatorService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/CalculatorLib" />
     </xsd:schema>
   </wsdl:types>
   <wsdl:message name="ICalculator_Operation_InputMessage">
@@ -355,24 +355,24 @@
   </wsdl:binding>
   <wsdl:service name="CalculatorService">
     <wsdl:port name="BasicHttp" binding="tns:BasicHttp">
-      <soap:address location="http://localhost:54502/CalaculatorService.svc/basic" />
+      <soap:address location="http://localhost:54502/CalculatorService.svc/basic" />
     </wsdl:port>
     <wsdl:port name="WSHttp" binding="tns:WSHttp">
-      <soap12:address location="http://localhost:54502/CalaculatorService.svc/ws" />
+      <soap12:address location="http://localhost:54502/CalculatorService.svc/ws" />
       <wsa10:EndpointReference>
-        <wsa10:Address>http://localhost:54502/CalaculatorService.svc/ws</wsa10:Address>
+        <wsa10:Address>http://localhost:54502/CalculatorService.svc/ws</wsa10:Address>
         <Identity xmlns="http://schemas.xmlsoap.org/ws/2006/02/addressingidentity">
           <Upn>spuri4@sapient.com</Upn>
         </Identity>
       </wsa10:EndpointReference>
     </wsdl:port>
     <wsdl:port name="BasicHttp_IAdvance" binding="tns:BasicHttp_IAdvance">
-      <soap:address location="http://localhost:54502/CalaculatorService.svc/basic2" />
+      <soap:address location="http://localhost:54502/CalculatorService.svc/basic2" />
     </wsdl:port>
     <wsdl:port name="WSHttp_IAdvance" binding="tns:WSHttp_IAdvance">
-      <soap12:address location="http://localhost:54502/CalaculatorService.svc/ws2" />
+      <soap12:address location="http://localhost:54502/CalculatorService.svc/ws2" />
       <wsa10:EndpointReference>
-        <wsa10:Address>http://localhost:54502/CalaculatorService.svc/ws2</wsa10:Address>
+        <wsa10:Address>http://localhost:54502/CalculatorService.svc/ws2</wsa10:Address>
         <Identity xmlns="http://schemas.xmlsoap.org/ws/2006/02/addressingidentity">
           <Upn>spuri4@sapient.com</Upn>
         </Identity>

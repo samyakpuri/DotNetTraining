@@ -50,20 +50,38 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
+    <Compile Include="Service References\FullCalculator\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="Service References\Calculator\CalaculatorService.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Service References\Calculator\CalaculatorService1.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Service References\Calculator\CalaculatorService2.xsd">
-      <SubType>Designer</SubType>
-    </None>
     <None Include="Service References\Calculator\CalculatorService.wsdl" />
+    <None Include="Service References\Calculator\CalculatorService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Calculator\CalculatorService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Calculator\CalculatorService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Service References\Calculator\WebServiceClient.Calculator.Response.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FullCalculator\FullCalculatorService.wsdl" />
+    <None Include="Service References\FullCalculator\FullCalculatorService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\FullCalculator\FullCalculatorService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\FullCalculator\FullCalculatorService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\FullCalculator\WebServiceClient.FullCalculator.Response.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
   </ItemGroup>
@@ -72,9 +90,10 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadataStorage Include="Service References\Calculator\" />
+    <WCFMetadataStorage Include="Service References\FullCalculator\" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Service References\Calculator\CalaculatorService.disco" />
+    <None Include="Service References\Calculator\CalculatorService.disco" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Service References\Calculator\configuration91.svcinfo" />
@@ -84,6 +103,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Service References\Calculator\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\FullCalculator\FullCalculatorService.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\FullCalculator\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\FullCalculator\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\FullCalculator\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>

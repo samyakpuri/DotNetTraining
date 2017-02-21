@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<SavedWcfConfigurationInformation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="9.1" CheckSum="Z9Vj3Xjxb09wYgaRJ0eM9SeX7Ak=">
+<SavedWcfConfigurationInformation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="9.1" CheckSum="XdZhF7uc47EMpweFM+ZJbNjfWPE=">
   <bindingConfigurations>
     <bindingConfiguration bindingType="basicHttpBinding" name="BasicHttp">
       <properties>
@@ -469,10 +469,10 @@
     </bindingConfiguration>
   </bindingConfigurations>
   <endpoints>
-    <endpoint name="BasicHttp" contract="Calculator.ICalculator" bindingType="basicHttpBinding" address="http://localhost:54502/CalaculatorService.svc/basic" bindingConfiguration="BasicHttp">
+    <endpoint name="BasicHttp" contract="Calculator.ICalculator" bindingType="basicHttpBinding" address="http://localhost:54502/CalculatorService.svc/basic" bindingConfiguration="BasicHttp">
       <properties>
         <property path="/address" isComplexType="false" isExplicitlyDefined="true" clrType="System.Uri, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-          <serializedValue>http://localhost:54502/CalaculatorService.svc/basic</serializedValue>
+          <serializedValue>http://localhost:54502/CalculatorService.svc/basic</serializedValue>
         </property>
         <property path="/behaviorConfiguration" isComplexType="false" isExplicitlyDefined="false" clrType="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
           <serializedValue />
@@ -554,10 +554,10 @@
         </property>
       </properties>
     </endpoint>
-    <endpoint name="WSHttp" contract="Calculator.ICalculator" bindingType="wsHttpBinding" address="http://localhost:54502/CalaculatorService.svc/ws" bindingConfiguration="WSHttp">
+    <endpoint name="WSHttp" contract="Calculator.ICalculator" bindingType="wsHttpBinding" address="http://localhost:54502/CalculatorService.svc/ws" bindingConfiguration="WSHttp">
       <properties>
         <property path="/address" isComplexType="false" isExplicitlyDefined="true" clrType="System.Uri, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-          <serializedValue>http://localhost:54502/CalaculatorService.svc/ws</serializedValue>
+          <serializedValue>http://localhost:54502/CalculatorService.svc/ws</serializedValue>
         </property>
         <property path="/behaviorConfiguration" isComplexType="false" isExplicitlyDefined="false" clrType="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
           <serializedValue />
@@ -639,10 +639,10 @@
         </property>
       </properties>
     </endpoint>
-    <endpoint name="BasicHttp_IAdvance" contract="Calculator.IAdvanceCalculator" bindingType="basicHttpBinding" address="http://localhost:54502/CalaculatorService.svc/basic2" bindingConfiguration="BasicHttp_IAdvance">
+    <endpoint name="BasicHttp_IAdvance" contract="Calculator.IAdvanceCalculator" bindingType="basicHttpBinding" address="http://localhost:54502/CalculatorService.svc/basic2" bindingConfiguration="BasicHttp_IAdvance">
       <properties>
         <property path="/address" isComplexType="false" isExplicitlyDefined="true" clrType="System.Uri, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-          <serializedValue>http://localhost:54502/CalaculatorService.svc/basic2</serializedValue>
+          <serializedValue>http://localhost:54502/CalculatorService.svc/basic2</serializedValue>
         </property>
         <property path="/behaviorConfiguration" isComplexType="false" isExplicitlyDefined="false" clrType="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
           <serializedValue />
@@ -724,10 +724,10 @@
         </property>
       </properties>
     </endpoint>
-    <endpoint name="WSHttp_IAdvance" contract="Calculator.IAdvanceCalculator" bindingType="wsHttpBinding" address="http://localhost:54502/CalaculatorService.svc/ws2" bindingConfiguration="WSHttp_IAdvance">
+    <endpoint name="WSHttp_IAdvance" contract="Calculator.IAdvanceCalculator" bindingType="wsHttpBinding" address="http://localhost:54502/CalculatorService.svc/ws2" bindingConfiguration="WSHttp_IAdvance">
       <properties>
         <property path="/address" isComplexType="false" isExplicitlyDefined="true" clrType="System.Uri, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-          <serializedValue>http://localhost:54502/CalaculatorService.svc/ws2</serializedValue>
+          <serializedValue>http://localhost:54502/CalculatorService.svc/ws2</serializedValue>
         </property>
         <property path="/behaviorConfiguration" isComplexType="false" isExplicitlyDefined="false" clrType="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
           <serializedValue />
