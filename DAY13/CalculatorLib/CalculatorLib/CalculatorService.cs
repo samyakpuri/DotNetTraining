@@ -14,10 +14,13 @@ namespace CalculatorLib
         public Response Operation(Request request)
         {
             Response response = new Response { Status = Status.Success };
+            
             switch(request.Operation)
             {
                 case Operator.None:
                     response.Status = Status.Failiure;
+                    response.StatusMessage = "Failiure";
+                    throw new FaultException<Response>(response,new FaultReason("This fault"));
                     break;
                 case Operator.Sum:
                     response.Result = (double)(request.Value1 + request.Value2);
@@ -38,8 +41,8 @@ namespace CalculatorLib
                     response.Status = Status.Failiure;
                     break;
             }
-            int count = response.Counter+1;
-            response.Counter = count;
+            response.Counter++;
+            Console.WriteLine(response.Counter);
             return response;
         }
 

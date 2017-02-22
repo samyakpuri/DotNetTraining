@@ -10,10 +10,13 @@ namespace CalculatorLib
     public class Response
     {
         [DataMember]
+        public int Counter { get; set; }
+        [DataMember]
         public Status Status { get; set; }
         [DataMember]
         public double Result { get; set; }
         [DataMember]
-        public int Counter { get; set; }
+        public String StatusMessage { get; set; }
+        
     }
 }

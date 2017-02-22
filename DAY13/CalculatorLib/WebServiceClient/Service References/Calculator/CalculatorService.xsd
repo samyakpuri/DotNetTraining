@@ -65,8 +65,10 @@
   <xs:element name="Operator" nillable="true" type="tns:Operator" />
   <xs:complexType name="Response">
     <xs:sequence>
+      <xs:element minOccurs="0" name="Counter" type="xs:int" />
       <xs:element minOccurs="0" name="Result" type="xs:double" />
       <xs:element minOccurs="0" name="Status" type="tns:Status" />
+      <xs:element minOccurs="0" name="StatusMessage" nillable="true" type="xs:string" />
     </xs:sequence>
   </xs:complexType>
   <xs:element name="Response" nillable="true" type="tns:Response" />

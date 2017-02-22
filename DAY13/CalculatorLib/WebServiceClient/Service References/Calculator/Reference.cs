@@ -126,10 +126,16 @@ namespace WebServiceClient.Calculator {
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int CounterField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
         private double ResultField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private WebServiceClient.Calculator.Status StatusField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string StatusMessageField;
         
         [global::System.ComponentModel.BrowsableAttribute(false)]
         public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
@@ -138,6 +144,19 @@ namespace WebServiceClient.Calculator {
             }
             set {
                 this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int Counter {
+            get {
+                return this.CounterField;
+            }
+            set {
+                if ((this.CounterField.Equals(value) != true)) {
+                    this.CounterField = value;
+                    this.RaisePropertyChanged("Counter");
+                }
             }
         }
         
@@ -163,6 +182,19 @@ namespace WebServiceClient.Calculator {
                 if ((this.StatusField.Equals(value) != true)) {
                     this.StatusField = value;
                     this.RaisePropertyChanged("Status");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string StatusMessage {
+            get {
+                return this.StatusMessageField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.StatusMessageField, value) != true)) {
+                    this.StatusMessageField = value;
+                    this.RaisePropertyChanged("StatusMessage");
                 }
             }
         }
@@ -193,6 +225,7 @@ namespace WebServiceClient.Calculator {
     public interface ICalculator {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ICalculator/Operation", ReplyAction="http://tempuri.org/ICalculator/OperationResponse")]
+        [System.ServiceModel.FaultContractAttribute(typeof(WebServiceClient.Calculator.Response), Action="http://tempuri.org/ICalculator/OperationResponseFault", Name="Response", Namespace="http://schemas.datacontract.org/2004/07/CalculatorLib")]
         WebServiceClient.Calculator.Response Operation(WebServiceClient.Calculator.Request request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ICalculator/Operation", ReplyAction="http://tempuri.org/ICalculator/OperationResponse")]
