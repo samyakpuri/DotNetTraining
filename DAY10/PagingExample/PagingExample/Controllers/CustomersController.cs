@@ -18,12 +18,13 @@ namespace PagingExample.Controllers
         int pageSize = 10;
 
         // GET: Customers
-        public ActionResult Index(string id)
+        public ActionResult Index(int? id)
         {
             Paginator paginator = new Paginator();
             int pageNumber;
             if (id == null) pageNumber = 1;
-            else pageNumber = Convert.ToInt32(id);
+            else pageNumber = (int)id;
+            //else pageNumber = Convert.ToInt32(id);
             var table = GetTableView(pageNumber);
             return View(table);
         }
