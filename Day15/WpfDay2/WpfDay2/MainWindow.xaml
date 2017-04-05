@@ -4,24 +4,29 @@
         xmlns:model="clr-namespace:WpfDay2.Model"
         xmlns:system ="clr-namespace:System;assembly=mscorlib"
         xmlns:collection="clr-namespace:System.Collections;assembly=mscorlib"
+        xmlns:converters="clr-namespace:WpfDay2.Converters"
         Title="MainWindow" Height="462" Width="633" Loaded="Window_Loaded" WindowStartupLocation="CenterScreen">
+    <Window.Resources>
+        <converters:BoolToGenderConverter x:Key="BoolToGenderConverter"/>
+    </Window.Resources>
     <Grid>
-        <DataGrid x:Name="grdDataOne" HorizontalAlignment="Left" Margin="139,25,0,0" VerticalAlignment="Top" Height="156" Width="378">
+        <DataGrid x:Name="grdDataOne" HorizontalAlignment="Left" Margin="139,25,0,0" VerticalAlignment="Top" Height="156" Width="378" AutoGenerateColumns="False">
             <DataGrid.Columns>
                 <DataGridTextColumn Binding="{Binding Name}" Header="Name"/>
                 <DataGridTextColumn Binding="{Binding Age}" Header="Age"/>
-                <DataGridCheckBoxColumn Binding="{Binding Gender}" Header="Gender"/>
+                <DataGridTextColumn Binding="{Binding Gender,Converter={StaticResource BoolToGenderConverter}}" Header="Gender"/>
                 <DataGridTextColumn Binding="{Binding DateOfBirth}" Header="Birth Date"/>
             </DataGrid.Columns>
         </DataGrid>
-        <DataGrid x:Name="grdDataTwo" HorizontalAlignment="Left" Margin="139,215,0,0" VerticalAlignment="Top" Height="177" Width="378">
+        <DataGrid x:Name="grdDataTwo" HorizontalAlignment="Left" Margin="139,215,0,0" VerticalAlignment="Top" Height="177" Width="378" AutoGenerateColumns="False">
             <DataGrid.Columns>
                 <DataGridTextColumn Binding="{Binding Name}" Header="Name"/>
                 <DataGridTextColumn Binding="{Binding Age}" Header="Age"/>
-                <DataGridCheckBoxColumn Binding="{Binding Gender}" Header="Gender"/>
+                <DataGridTextColumn Binding="{Binding Gender,Converter={StaticResource BoolToGenderConverter}}" Header="Gender"/>
                 <DataGridTextColumn Binding="{Binding DateOfBirth}" Header="Birth Date"/>
             </DataGrid.Columns>
         </DataGrid>
+        <Button x:Name="btnChange" Content="Change" HorizontalAlignment="Left" Margin="31,191,0,0" VerticalAlignment="Top" Width="75" Click="btnChange_Click"/>
 
     </Grid>
 </Window>
