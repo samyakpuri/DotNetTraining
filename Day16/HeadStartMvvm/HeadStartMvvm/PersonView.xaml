@@ -1,0 +1,24 @@
+﻿<Window x:Class="HeadStartMvvm.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:ViewModels="clr-namespace:HeadStartMvvm.ViewModels"
+        xmlns:Converters="clr-namespace:HeadStartMvvm.Converters"
+        Title="MainWindow" Height="350" Width="525">
+    <Window.Resources>
+        <ViewModels:PersonViewModel x:Key="PersonViewModel"/>
+        <Converters:BoolToGenderConverter x:Key="BoolToGenderConverter"/>
+    </Window.Resources>
+    <Grid DataContext="{StaticResource PersonViewModel}">
+        <Grid DataContext="{Binding Person}" Margin="109,50,110,51">
+            <Label Content="Name" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="53,26,0,0"/>
+            <Label Content="Birth Date" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="53,119,0,0"/>
+            <Label Content="Gender" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="53,88,0,0"/>
+            <Label Content="Id" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="53,57,0,0"/>
+            <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="{Binding Name}" VerticalAlignment="Top" Width="120" Margin="139,26,0,0"/>
+            <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="{Binding Id}" VerticalAlignment="Top" Width="120" Margin="139,59,0,0"/>
+            <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="{Binding Gender,Converter={StaticResource BoolToGenderConverter}}" VerticalAlignment="Top" Width="120" Margin="139,87,0,0"/>
+            <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="{Binding DateOfBirth}" VerticalAlignment="Top" Width="120" Margin="139,119,0,0"/>
+            <Button Content="Save" HorizontalAlignment="Left" Margin="107,163,0,0" VerticalAlignment="Top" Width="75" Command="{Binding RelativeSource={RelativeSource AncestorLevel=2,AncestorType=Grid}, Path=DataContext.AddPersonCommand}" CommandParameter="{Binding}"/>
+        </Grid>
+    </Grid>
+</Window>
