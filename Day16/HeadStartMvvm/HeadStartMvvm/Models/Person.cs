@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace HeadStartMvvm.Models
 {
-    class Person : INotifyPropertyChanged
+    class Person : INotifyPropertyChanged, IDataErrorInfo
     {
         #region Private Members
         private int _id;
@@ -93,6 +93,24 @@ namespace HeadStartMvvm.Models
             if (PropertyChanged != null)
             {
                 PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+            }
+        }
+
+        public string Error { get; private set; }
+
+        public string this[string columnName]
+        {
+            get 
+            { 
+                if(String.IsNullOrEmpty(Name))
+                {
+                    return "Name is Required";
+                }
+                if(Id < 0)
+                {
+                    return "Id cannot be Negative";
+                }
+                return null;
             }
         }
     }

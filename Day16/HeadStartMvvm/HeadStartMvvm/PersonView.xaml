@@ -13,8 +13,9 @@
                 <Setter.Value>
                     <ControlTemplate>
                         <StackPanel>
-                            <Border BorderBrush="DarkRed" BorderThickness="1" Background="#11FF0000" />
-                            <AdornedElementPlaceholder x:Name="errorControl" />
+                            <Border BorderBrush="DarkRed" BorderThickness="2">
+                            	<AdornedElementPlaceholder x:Name="errorControl" />
+                            </Border>
                         </StackPanel>
                     </ControlTemplate>
                 </Setter.Value>
@@ -24,6 +25,7 @@
                     <Setter Property="ToolTip" Value="{Binding RelativeSource={RelativeSource Self}, Path=(Validation.Errors)[0].ErrorContent}" />
                     <Setter Property="BorderBrush" Value="Red"/>
                     <Setter Property="BorderThickness" Value="1"/>
+                    <Setter Property="Background" Value="#11FF0000"/>
                 </Trigger>
             </Style.Triggers>
         </Style>
@@ -39,11 +41,12 @@
                     <Binding Path="Name" UpdateSourceTrigger="LostFocus">
                         <Binding.ValidationRules>
                             <Validators:MandatoryFieldRule/>
+                            <DataErrorValidationRule/>
                         </Binding.ValidationRules>
                     </Binding>
                 </TextBox.Text>
             </TextBox>
-            <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="{Binding Id}" VerticalAlignment="Top" Width="120" Margin="139,59,0,0"/>
+            <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="{Binding Id, ValidatesOnDataErrors=True}" VerticalAlignment="Top" Width="120" Margin="139,59,0,0"/>
             <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="{Binding Gender,Converter={StaticResource BoolToGenderConverter}}" VerticalAlignment="Top" Width="120" Margin="139,87,0,0"/>
             <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="{Binding DateOfBirth}" VerticalAlignment="Top" Width="120" Margin="139,119,0,0"/>
             <Button Content="Save" HorizontalAlignment="Left" Margin="107,163,0,0" VerticalAlignment="Top" Width="75" Command="{Binding RelativeSource={RelativeSource AncestorLevel=2,AncestorType=Grid}, Path=DataContext.AddPersonCommand}" CommandParameter="{Binding}"/>
