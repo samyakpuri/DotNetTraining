@@ -22,10 +22,12 @@ namespace WpfDay3
         {
             if(theme == "US")
             {
+                App.Current.Resources.MergedDictionaries.Clear();
                 App.Current.Resources.MergedDictionaries.Add(new ResourceDictionary() { Source = new Uri("Theme2.xaml", UriKind.Relative) });
             }
             else
             {
+                App.Current.Resources.MergedDictionaries.Clear();
                 App.Current.Resources.MergedDictionaries.Add(new ResourceDictionary() { Source = new Uri("Theme1.xaml", UriKind.Relative) });
             }
         }

@@ -27,7 +27,15 @@ namespace WpfDay3
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            (App.Current as App).ChangeTheme("US");
+            ResourceDictionary dictionary = new ResourceDictionary(){ Source = new Uri("Theme1.xaml", UriKind.Relative) };
+            if(App.Current.Resources.MergedDictionaries.Contains(dictionary))
+            {
+                (App.Current as App).ChangeTheme("US");
+            }
+            else
+            {
+                (App.Current as App).ChangeTheme("Other");
+            }
         }
 
         //private void EventSetter_OnHandler(object sender, TextChangedEventArgs e)

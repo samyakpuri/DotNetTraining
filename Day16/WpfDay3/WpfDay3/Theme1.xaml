@@ -3,6 +3,27 @@
    
     <Style x:Key="Style1" TargetType="TextBox">
         <Setter Property="Background" Value="Red"/>
+        <Style.Triggers>
+            <Trigger  Property="Foreground" Value="Yellow">
+                <Setter Property="Background" Value="Green"/>
+                <Setter Property="Text" Value="Green"/>
+            </Trigger>
+            <MultiTrigger>
+                <MultiTrigger.Conditions>
+                    <Condition Property="Background" Value="Green"/>
+                    <Condition Property="Text" Value="Green"/>
+                </MultiTrigger.Conditions>
+                <MultiTrigger.Setters>
+                    <Setter Property="ToolTip" Value="This is a tooltip"/>
+                </MultiTrigger.Setters>
+            </MultiTrigger>
+            <DataTrigger Binding="{Binding ElementName=chkBox1,Path=IsChecked}" Value="true">
+                <DataTrigger.Setters>
+                    <Setter Property="Foreground" Value="HotPink"/>
+                    <Setter Property="Text" Value="Text Box"/>
+                </DataTrigger.Setters>
+            </DataTrigger>           
+        </Style.Triggers>
     </Style>
     <Style TargetType="TextBox" BasedOn="{StaticResource Style1}">
         <Setter Property="Foreground" Value="Yellow" />
