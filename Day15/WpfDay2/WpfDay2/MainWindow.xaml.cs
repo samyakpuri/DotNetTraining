@@ -33,28 +33,28 @@ namespace WpfDay2
         {
             _persons = new ObservableCollection<Person>
             {
-                new Person {Id=1,Name = "Sam",Age=23,Gender=true,DateOfBirth=DateTime.Now.AddYears(-23).AddDays(2).AddMonths(3)},
-                new Person {Id=1,Name = "Samyak",Age=33,Gender=true,DateOfBirth=DateTime.Now.AddYears(-33).AddDays(-2).AddMonths(-3)},
-                new Person {Id=1,Name = "Sammy",Age=43,Gender=true,DateOfBirth=DateTime.Now.AddYears(-43).AddDays(6)},
-                new Person {Id=1,Name = "Megha",Age=23,Gender=false,DateOfBirth=DateTime.Now.AddYears(-23).AddDays(6).AddMonths(2)}
+                new Person {Id=1,FirstName = "Poonam",LastName = "Siwach",Age=23,Gender=false,DateOfBirth=DateTime.Now.AddYears(-23).AddDays(2).AddMonths(3)},
+                new Person {Id=1,FirstName = "Samyak",LastName = "Puri",Age=33,Gender=true,DateOfBirth=DateTime.Now.AddYears(-33).AddDays(-2).AddMonths(-3)},
+                new Person {Id=1,FirstName = "Jatin",LastName = "Katoch",Age=43,Gender=true,DateOfBirth=DateTime.Now.AddYears(-43).AddDays(6)},
+                new Person {Id=1,FirstName = "Deepti",LastName = "Divya",Age=23,Gender=false,DateOfBirth=DateTime.Now.AddYears(-23).AddDays(6).AddMonths(2)}
             };
 
             grdDataOne.ItemsSource = _persons;
             grdDataTwo.ItemsSource = _persons;
         }
 
-        private void btnChange_Click(object sender, RoutedEventArgs e)
-        {
-            if(_persons.FirstOrDefault().Name == "Changed Name")
-            {
-                _persons.FirstOrDefault().Name = "Sam";
-                _persons.RemoveAt(3);
-            }
-            else
-            {
-                _persons.FirstOrDefault().Name = "Changed Name";
-                _persons.Add(new Person { Id = 4, Name = "Samm", Age = 53, Gender = true, DateOfBirth = DateTime.Now.AddYears(-53).AddDays(55).AddMonths(-6) });
-            }
-        }
+        //private void btnChange_Click(object sender, RoutedEventArgs e)
+        //{
+        //    if(_persons.FirstOrDefault().Name == "Changed Name")
+        //    {
+        //        _persons.FirstOrDefault().Name = "Sam";
+        //        _persons.RemoveAt(3);
+        //    }
+        //    else
+        //    {
+        //        _persons.FirstOrDefault().Name = "Changed Name";
+        //        _persons.Add(new Person { Id = 4, Name = "Samm", Age = 53, Gender = true, DateOfBirth = DateTime.Now.AddYears(-53).AddDays(55).AddMonths(-6) });
+        //    }
+        //}
     }
 }

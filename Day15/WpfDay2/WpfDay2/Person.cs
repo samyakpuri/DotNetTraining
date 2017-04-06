@@ -12,10 +12,11 @@ namespace WpfDay2.Model
     class Person : INotifyPropertyChanged
     {
         private int _id;
-        private String _name;
+        private String _firstName;
         private byte _age;
         private bool _gender;
         private DateTime _dateOfBirth;
+        private String _lastName;
 
         public int Id 
         { 
@@ -26,12 +27,21 @@ namespace WpfDay2.Model
                 OnPropertyChanged();
             }
         }
-        public String Name 
+        public String FirstName 
         { 
-            get {return _name;} 
+            get {return _firstName;} 
             set 
             {
-                _name = value;
+                _firstName = value;
+                OnPropertyChanged();
+            }
+        }
+        public String LastName
+        {
+            get { return _lastName; }
+            set
+            {
+                _lastName = value;
                 OnPropertyChanged();
             }
         }

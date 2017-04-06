@@ -8,11 +8,34 @@
         Title="MainWindow" Height="462" Width="633" Loaded="Window_Loaded" WindowStartupLocation="CenterScreen">
     <Window.Resources>
         <converters:BoolToGenderConverter x:Key="BoolToGenderConverter"/>
+        <converters:NameConverter x:Key="NameConverter"/>
     </Window.Resources>
     <Grid>
         <DataGrid x:Name="grdDataOne" HorizontalAlignment="Left" Margin="139,25,0,0" VerticalAlignment="Top" Height="156" Width="378" AutoGenerateColumns="False">
             <DataGrid.Columns>
-                <DataGridTextColumn Binding="{Binding Name}" Header="Name"/>
+                <!--<DataGridTextColumn Binding="{Binding Name}" Header="Name"/>-->
+                <DataGridTemplateColumn Header="Name">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <TextBlock>
+                                <TextBlock.Text>
+                                    <MultiBinding Converter="{StaticResource NameConverter}">
+                                        <Binding Path="FirstName"/>
+                                        <Binding Path="LastName" />
+                                    </MultiBinding>
+                                </TextBlock.Text>
+                            </TextBlock>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                    <DataGridTemplateColumn.CellEditingTemplate>
+                        <DataTemplate>
+                            <StackPanel Orientation="Horizontal">
+                                <TextBox Text="{Binding FirstName}"/>
+                                <TextBox Text="{Binding LastName}"/>
+                            </StackPanel> 
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellEditingTemplate>
+                </DataGridTemplateColumn>
                 <DataGridTextColumn Binding="{Binding Age}" Header="Age"/>
                 <DataGridTextColumn Binding="{Binding Gender,Converter={StaticResource BoolToGenderConverter}}" Header="Gender"/>
                 <DataGridTextColumn Binding="{Binding DateOfBirth}" Header="Birth Date"/>
@@ -20,13 +43,43 @@
         </DataGrid>
         <DataGrid x:Name="grdDataTwo" HorizontalAlignment="Left" Margin="139,215,0,0" VerticalAlignment="Top" Height="177" Width="378" AutoGenerateColumns="False">
             <DataGrid.Columns>
-                <DataGridTextColumn Binding="{Binding Name}" Header="Name"/>
+                <!--<DataGridTextColumn Binding="{Binding Name}" Header="Name"/>-->
+                <DataGridTextColumn Header="Name">
+                    <DataGridTextColumn.Binding>
+                        <MultiBinding Converter="{StaticResource NameConverter}">
+                            <Binding Path="FirstName"/>
+                            <Binding Path="LastName" />
+                        </MultiBinding>
+                    </DataGridTextColumn.Binding>
+                </DataGridTextColumn>
+                <!--<DataGridTemplateColumn Header="Name">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <TextBlock>
+                                <TextBlock.Text>
+                                    <MultiBinding Converter="{StaticResource NameConverter}">
+                                        <Binding Path="FirstName"/>
+                                        <Binding Path="LastName" />
+                                    </MultiBinding>
+                                </TextBlock.Text>
+                            </TextBlock>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                    <DataGridTemplateColumn.CellEditingTemplate>
+                        <DataTemplate>
+                            <StackPanel Orientation="Horizontal">
+                                <TextBox Text="{Binding FirstName}"/>
+                                <TextBox Text="{Binding LastName}"/>
+                            </StackPanel>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellEditingTemplate>
+                </DataGridTemplateColumn>-->
                 <DataGridTextColumn Binding="{Binding Age}" Header="Age"/>
                 <DataGridTextColumn Binding="{Binding Gender,Converter={StaticResource BoolToGenderConverter}}" Header="Gender"/>
                 <DataGridTextColumn Binding="{Binding DateOfBirth}" Header="Birth Date"/>
             </DataGrid.Columns>
         </DataGrid>
-        <Button x:Name="btnChange" Content="Change" HorizontalAlignment="Left" Margin="31,191,0,0" VerticalAlignment="Top" Width="75" Click="btnChange_Click"/>
+        <Button x:Name="btnChange" Content="Change" HorizontalAlignment="Left" Margin="31,191,0,0" VerticalAlignment="Top" Width="75" />
 
     </Grid>
 </Window>
