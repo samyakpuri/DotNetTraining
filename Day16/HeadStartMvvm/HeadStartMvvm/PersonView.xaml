@@ -3,10 +3,30 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:ViewModels="clr-namespace:HeadStartMvvm.ViewModels"
         xmlns:Converters="clr-namespace:HeadStartMvvm.Converters"
+        xmlns:Validators="clr-namespace:HeadStartMvvm.Validators"
         Title="MainWindow" Height="350" Width="525">
     <Window.Resources>
         <ViewModels:PersonViewModel x:Key="PersonViewModel"/>
         <Converters:BoolToGenderConverter x:Key="BoolToGenderConverter"/>
+        <Style TargetType="TextBox">
+            <Setter Property="Validation.ErrorTemplate">
+                <Setter.Value>
+                    <ControlTemplate>
+                        <StackPanel>
+                            <Border BorderBrush="DarkRed" BorderThickness="1" Background="#11FF0000" />
+                            <AdornedElementPlaceholder x:Name="errorControl" />
+                        </StackPanel>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            <Style.Triggers>
+                <Trigger Property="Validation.HasError" Value="True">
+                    <Setter Property="ToolTip" Value="{Binding RelativeSource={RelativeSource Self}, Path=(Validation.Errors)[0].ErrorContent}" />
+                    <Setter Property="BorderBrush" Value="Red"/>
+                    <Setter Property="BorderThickness" Value="1"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
     </Window.Resources>
     <Grid DataContext="{StaticResource PersonViewModel}">
         <Grid DataContext="{Binding Person}" Margin="109,50,110,51">
@@ -14,7 +34,15 @@
             <Label Content="Birth Date" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="53,119,0,0"/>
             <Label Content="Gender" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="53,88,0,0"/>
             <Label Content="Id" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="53,57,0,0"/>
-            <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="{Binding Name}" VerticalAlignment="Top" Width="120" Margin="139,26,0,0"/>
+            <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="139,26,0,0">
+                <TextBox.Text>
+                    <Binding Path="Name" UpdateSourceTrigger="LostFocus">
+                        <Binding.ValidationRules>
+                            <Validators:MandatoryFieldRule/>
+                        </Binding.ValidationRules>
+                    </Binding>
+                </TextBox.Text>
+            </TextBox>
             <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="{Binding Id}" VerticalAlignment="Top" Width="120" Margin="139,59,0,0"/>
             <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="{Binding Gender,Converter={StaticResource BoolToGenderConverter}}" VerticalAlignment="Top" Width="120" Margin="139,87,0,0"/>
             <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="{Binding DateOfBirth}" VerticalAlignment="Top" Width="120" Margin="139,119,0,0"/>
