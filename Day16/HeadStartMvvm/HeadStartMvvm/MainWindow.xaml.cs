@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace WpfDay3
+namespace HeadStartMvvm
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -24,22 +24,5 @@ namespace WpfDay3
         {
             InitializeComponent();
         }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            if (App.Current.Resources.MergedDictionaries[0].Source.ToString() == "Theme1.xaml")
-            {
-                (App.Current as App).ChangeTheme("US");
-            }
-            else
-            {
-                (App.Current as App).ChangeTheme("Other");
-            }
-        }
-
-        //private void EventSetter_OnHandler(object sender, TextChangedEventArgs e)
-        //{
-        //    MessageBox.Show(sender.ToString());
-        //}
     }
 }

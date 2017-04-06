@@ -19,10 +19,25 @@
             </MultiTrigger>
             <DataTrigger Binding="{Binding ElementName=chkBox1,Path=IsChecked}" Value="true">
                 <DataTrigger.Setters>
-                    <Setter Property="Foreground" Value="HotPink"/>
+                    <Setter Property="Foreground" Value="BlanchedAlmond"/>
                     <Setter Property="Text" Value="Text Box"/>
                 </DataTrigger.Setters>
             </DataTrigger>           
+            
+            <EventTrigger RoutedEvent="MouseEnter">
+                <BeginStoryboard>
+                    <Storyboard>
+                        <DoubleAnimation Duration="0:0:0.300" Storyboard.TargetProperty="FontSize" To="30"/>
+                    </Storyboard>
+                </BeginStoryboard>
+            </EventTrigger>
+            <EventTrigger RoutedEvent="MouseLeave">
+                <BeginStoryboard>
+                    <Storyboard>
+                        <DoubleAnimation Duration="0:0:0.800" Storyboard.TargetProperty="FontSize" To="14"/>
+                    </Storyboard>
+                </BeginStoryboard>
+            </EventTrigger>
         </Style.Triggers>
     </Style>
     <Style TargetType="TextBox" BasedOn="{StaticResource Style1}">
