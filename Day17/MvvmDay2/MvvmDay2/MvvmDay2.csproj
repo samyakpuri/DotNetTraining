@@ -53,6 +53,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Calculator.cs" />
     <Compile Include="Commands\DelegateCommand.cs" />
     <Compile Include="Farmework\ObservableObject.cs" />
     <Compile Include="Models\Header.cs" />

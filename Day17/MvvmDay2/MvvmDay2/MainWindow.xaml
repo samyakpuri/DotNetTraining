@@ -9,7 +9,7 @@
     </Window.Resources>
     <Grid Margin="0,0,0,0"  DataContext="{StaticResource MainViewModel}">
         <views:HeaderView HorizontalAlignment="Left" VerticalAlignment="Top"  DataContext="{Binding Header}"  Width="308" Margin="107,10,0,0"/>
-        <views:PersonView HorizontalAlignment="Left" VerticalAlignment="Top"  DataContext="{Binding Person}" Width="296" Margin="119,105,0,0" Height="191"/>
+        <views:PersonView HorizontalAlignment="Left" VerticalAlignment="Top"  DataContext="{Binding Person}" Width="308" Margin="107,105,0,0" Height="191"/>
         <Button Content="Save" HorizontalAlignment="Left"  VerticalAlignment="Top" Width="75" Command="{Binding AddPersonCommand}" Margin="225,262,0,0"/>
     </Grid>
 </Window>
