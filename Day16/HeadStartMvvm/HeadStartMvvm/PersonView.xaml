@@ -14,7 +14,7 @@
                     <ControlTemplate>
                         <StackPanel>
                             <Border BorderBrush="DarkRed" BorderThickness="2">
-                            	<AdornedElementPlaceholder x:Name="errorControl" />
+                                <AdornedElementPlaceholder x:Name="errorControl" />
                             </Border>
                         </StackPanel>
                     </ControlTemplate>
@@ -29,6 +29,12 @@
                 </Trigger>
             </Style.Triggers>
         </Style>
+        <ControlTemplate x:Key="ControlTemplate" TargetType="{x:Type Button}">
+            <Grid>
+                <Ellipse Fill="#11FF0000" Height="{TemplateBinding Height}" Width="{TemplateBinding Width}" Stroke="DarkRed" StrokeThickness="2"/>
+                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            </Grid>
+        </ControlTemplate>
     </Window.Resources>
     <Grid DataContext="{StaticResource PersonViewModel}">
         <Grid DataContext="{Binding Person}" Margin="109,50,110,51">
@@ -49,7 +55,7 @@
             <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="{Binding Id, ValidatesOnDataErrors=True}" VerticalAlignment="Top" Width="120" Margin="139,59,0,0"/>
             <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="{Binding Gender,Converter={StaticResource BoolToGenderConverter}}" VerticalAlignment="Top" Width="120" Margin="139,87,0,0"/>
             <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="{Binding DateOfBirth}" VerticalAlignment="Top" Width="120" Margin="139,119,0,0"/>
-            <Button Content="Save" HorizontalAlignment="Left" Margin="107,163,0,0" VerticalAlignment="Top" Width="75" Command="{Binding RelativeSource={RelativeSource AncestorLevel=2,AncestorType=Grid}, Path=DataContext.AddPersonCommand}" CommandParameter="{Binding}"/>
+            <Button Content="Save" HorizontalAlignment="Left" Margin="107,163,0,0" VerticalAlignment="Top" Width="81" Template="{StaticResource ControlTemplate}" Command="{Binding RelativeSource={RelativeSource AncestorLevel=2,AncestorType=Grid}, Path=DataContext.AddPersonCommand}" CommandParameter="{Binding}" Height="25"/>
         </Grid>
     </Grid>
 </Window>
