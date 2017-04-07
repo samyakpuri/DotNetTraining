@@ -58,6 +58,7 @@
     <Compile Include="Farmework\ObservableObject.cs" />
     <Compile Include="Models\Header.cs" />
     <Compile Include="Models\Person.cs" />
+    <Compile Include="Services\DialogService.cs" />
     <Compile Include="ViewModels\BaseViewModel.cs" />
     <Compile Include="ViewModels\MainViewModel.cs" />
     <Compile Include="Views\PersonView.xaml.cs">

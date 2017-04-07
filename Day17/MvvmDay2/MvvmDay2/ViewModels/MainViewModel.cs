@@ -6,17 +6,20 @@ using System.Threading.Tasks;
 using MvvmDay2.Models;
 using MvvmDay2.Commands;
 using System.Windows;
+using MvvmDay2.Services;
 
 namespace MvvmDay2.ViewModels
 {
     class MainViewModel : BaseViewModel
     {
+        private IDialogService _dialogService;
         public Header Header { get; set; }
         public Person Person { get; set; }
         public DelegateCommand AddPersonCommand { get; set; }
 
-        public MainViewModel()
+        public MainViewModel(IDialogService dialogService)
         {
+            _dialogService = dialogService;
             Header = new Header() { Title = "Hello World", Url = new Uri("../Images/logo.png",UriKind.Relative) };
             Person = new Person() { Name = "Samyak Puri", Gender = true, Id = 1};
             AddPersonCommand = new DelegateCommand(CanExecute,Execute);
@@ -24,7 +27,8 @@ namespace MvvmDay2.ViewModels
 
         private void Execute(object obj)
         {
-            MessageBox.Show("Saved");
+            Person.Name = "Changed";
+            _dialogService.Show("Saved");
         }
 
         private bool CanExecute(object obj)
