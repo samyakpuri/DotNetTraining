@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MvvmDay2.Farmework;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,10 +7,29 @@ using System.Threading.Tasks;
 
 namespace MvvmDay2.Models
 {
-    class Header
+    class Header : ObservableObject
     {
-        public Uri Url { get; set; }
+        private Uri _url;
+        private String _title;
 
-        public String Title { get; set; }
+        public Uri Url 
+        {
+            get { return _url; }
+            set 
+            { 
+                _url = value;
+                OnPropertyChanged();
+            }
+        }
+
+        public String Title 
+        {
+            get { return _title; }
+            set 
+            { 
+                _title = value;
+                OnPropertyChanged();
+            }
+        }
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MvvmDay2.Farmework;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
@@ -8,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace MvvmDay2.Models
 {
-    class Person : INotifyPropertyChanged
+    class Person : ObservableObject
     {
         #region Private Members
         private int _id;
@@ -86,14 +87,5 @@ namespace MvvmDay2.Models
         }
         #endregion
 
-        public event PropertyChangedEventHandler PropertyChanged;
-
-        protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
-        {
-            if (PropertyChanged != null)
-            {
-                PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
-            }
-        }
     }
 }

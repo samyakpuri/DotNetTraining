@@ -54,8 +54,10 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Commands\DelegateCommand.cs" />
+    <Compile Include="Farmework\ObservableObject.cs" />
     <Compile Include="Models\Header.cs" />
     <Compile Include="Models\Person.cs" />
+    <Compile Include="ViewModels\BaseViewModel.cs" />
     <Compile Include="ViewModels\MainViewModel.cs" />
     <Compile Include="Views\PersonView.xaml.cs">
       <DependentUpon>PersonView.xaml</DependentUpon>

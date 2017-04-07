@@ -9,7 +9,7 @@ using System.Windows;
 
 namespace MvvmDay2.ViewModels
 {
-    class MainViewModel
+    class MainViewModel : BaseViewModel
     {
         public Header Header { get; set; }
         public Person Person { get; set; }
