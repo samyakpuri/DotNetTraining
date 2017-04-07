@@ -27,7 +27,7 @@ namespace MvvmDay2.ViewModels
 
         private void Execute(object obj)
         {
-            Person.Name = "Changed";
+            Person.Name = _dialogService.ShowDialog();
             _dialogService.Show("Saved");
         }
 

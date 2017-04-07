@@ -14,13 +14,14 @@ namespace MvvmDay2.Tests
         public void AddPersonCommandOnCallingChangesPersonNameToChanged()
         {
             Mock<IDialogService> mock = new Mock<IDialogService>();
-
+            mock.Setup(it => it.ShowDialog()).Returns("This is from Test");
             MainViewModel mainViewModel = new MainViewModel(mock.Object);
             Person person = new Person();
             person.Name = "Hi";
             mainViewModel.Person = person;
             mainViewModel.AddPersonCommand.Execute(null);
-            Assert.AreEqual(mainViewModel.Person.Name, "Changed");
+            mock.Verify(it => it.Show(It.IsAny<string>()), Times.Once);
+            Assert.AreEqual(mainViewModel.Person.Name, "This is from Test");
         }
     }
 }

@@ -13,10 +13,17 @@ namespace MvvmDay2.Services
         {
             MessageBox.Show(message);
         }
+
+
+        public string ShowDialog()
+        {
+            return " ";
+        }
     }
 
     public interface IDialogService
     {
         void Show(string message);
+        string ShowDialog();
     }
 }
