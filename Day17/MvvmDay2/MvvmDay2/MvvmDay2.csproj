@@ -53,6 +53,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Commands\DelegateCommand.cs" />
     <Compile Include="Models\Header.cs" />
     <Compile Include="Models\Person.cs" />
     <Compile Include="ViewModels\MainViewModel.cs" />

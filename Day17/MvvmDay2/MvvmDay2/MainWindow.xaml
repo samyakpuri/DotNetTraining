@@ -3,12 +3,13 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:views="clr-namespace:MvvmDay2.Views"
         xmlns:viewmodels="clr-namespace:MvvmDay2.ViewModels"
-        Title="MainWindow" Height="350" Width="525">
+        Title="MainWindow" Height="350" Width="525" WindowStartupLocation="CenterScreen">
     <Window.Resources>
         <viewmodels:MainViewModel x:Key="MainViewModel"/>
     </Window.Resources>
-    <Grid DataContext="{StaticResource MainViewModel}">
-        <views:HeaderView Margin="101,10,120,220" DataContext="{Binding Header}"/>
-        <views:PersonView Margin="101,105,120,36" DataContext="{Binding Person}"/>
+    <Grid Margin="0,0,0,0"  DataContext="{StaticResource MainViewModel}">
+        <views:HeaderView HorizontalAlignment="Left" VerticalAlignment="Top"  DataContext="{Binding Header}"  Width="308" Margin="107,10,0,0"/>
+        <views:PersonView HorizontalAlignment="Left" VerticalAlignment="Top"  DataContext="{Binding Person}" Width="296" Margin="119,105,0,0" Height="191"/>
+        <Button Content="Save" HorizontalAlignment="Left"  VerticalAlignment="Top" Width="75" Command="{Binding AddPersonCommand}" Margin="225,262,0,0"/>
     </Grid>
 </Window>
