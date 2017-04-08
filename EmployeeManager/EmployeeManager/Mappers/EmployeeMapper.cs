@@ -29,6 +29,8 @@ namespace EmployeeManager.Mappers
 
         public static void MapBack(Employee employee,EmployeeModel employeeModel)
         {
+            EmployeeManagementEntities db = new EmployeeManagementEntities();
+
             employee.EmployeeId = employeeModel.EmployeeId;
             var temp = employeeModel.Name.Split(null).ToList();
             employee.FirstName = temp[0];
@@ -40,12 +42,11 @@ namespace EmployeeManager.Mappers
             employee.LastUpdated = employeeModel.LastUpdated;
             employee.Salary = employeeModel.Salary;
             employee.Gender = employeeModel.Gender;
-            employee.Department = employeeModel.Department;
+            employee.Department =  db.Departments.Find(employeeModel.Department).DepartmentId;
             employee.Designation = employeeModel.Designation;
-            employee.Project = employeeModel.Project;
+            employee.Project = db.Projects.Find(employeeModel.Project).ProjectId;
             employee.Email = employeeModel.Email;
         }
-        }
-    }
     }
 }
+   

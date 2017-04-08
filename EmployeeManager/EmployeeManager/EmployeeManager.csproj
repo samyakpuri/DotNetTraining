@@ -62,6 +62,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Commands\DelegateCommand.cs" />
     <Compile Include="DataModel\Department.cs">
       <DependentUpon>EmployeeDataModel.tt</DependentUpon>
     </Compile>
@@ -93,7 +94,9 @@
       <DependentUpon>EmployeeDataModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Mappers\EmployeeMapper.cs" />
+    <Compile Include="Services\DialogService.cs" />
     <Compile Include="ViewModels\BaseViewModel.cs" />
+    <Compile Include="ViewModels\EmployeeViewModel.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>

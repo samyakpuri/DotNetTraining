@@ -10,7 +10,7 @@ using MvvmDay2.Services;
 
 namespace MvvmDay2.ViewModels
 {
-    class MainViewModel : BaseViewModel, MvvmDay2.ViewModels.IMainViewModel
+    class MainViewModel : BaseViewModel, IMainViewModel
     {
         private IDialogService _dialogService;
         public Header Header { get; set; }

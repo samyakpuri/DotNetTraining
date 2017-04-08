@@ -3,7 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="Home" Height="350" Width="525" WindowStartupLocation="CenterScreen">
     <Grid>
-        <Button Content="List" VerticalAlignment="Top" HorizontalAlignment="Left" Width="50" Margin="150,144,0,0" Click="Button_Click"/>
-        <Button Content="Add" VerticalAlignment="Top" HorizontalAlignment="Left" Width="50" Margin="306,144,0,0"/>
+        <Button Content="Add" VerticalAlignment="Top" HorizontalAlignment="Left" Width="55" Margin="34,10,0,0"/>
+        <DataGrid HorizontalAlignment="Left" Margin="34,37,0,0" VerticalAlignment="Top" Height="246" Width="464" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto"/>
     </Grid>
 </Window>
