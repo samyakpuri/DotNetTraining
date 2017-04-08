@@ -24,7 +24,7 @@ namespace EmployeeManager
     public partial class MainWindow : Window
     {
         EmployeeManagementEntities db = new EmployeeManagementEntities();
-        private List<EmployeeModel> _employees { get; set; }
+        public List<EmployeeModel> _employees { get; set; }
         public MainWindow()
         {
             InitializeComponent();
@@ -34,13 +34,14 @@ namespace EmployeeManager
         private void LoadGrid()
         {
             _employees = new List<EmployeeModel>();
-            var tempEmployees = db.Employees.Where(s=>s.Active.Equals("Active")).ToList();
+            var tempEmployees = db.Employees.ToList();
             foreach (var employee in tempEmployees)
             {
                 EmployeeModel emp = new EmployeeModel();
                 EmployeeMapper.Map(employee, emp);
                 _employees.Add(emp);    
             }
+            grdEmployee.ItemsSource = _employees;
         }
 
         private void BtnAdd_Click(object sender, RoutedEventArgs e)

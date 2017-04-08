@@ -2,14 +2,33 @@
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:views="clr-namespace:EmployeeManager.Views"
+        xmlns:models="clr-namespace:EmployeeManager.Models"
         Title="Home" Height="350" Width="525" WindowStartupLocation="CenterScreen">
+    <Window.Resources>
+        <models:EmployeeModel x:Key="EmployeeModel"/>
+    </Window.Resources>
     <Grid>
         <Button Content="Add" VerticalAlignment="Top" HorizontalAlignment="Left" Width="55" Margin="34,10,0,0" Click="BtnAdd_Click"/>
-        <DataGrid HorizontalAlignment="Left" Margin="34,37,0,0" VerticalAlignment="Top" Height="246" Width="464" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto"/>
+        <DataGrid x:Name="grdEmployee" HorizontalAlignment="Left" Margin="34,37,0,0" DataContext="{StaticResource EmployeeModel}" VerticalAlignment="Top" Height="246" Width="464" AutoGenerateColumns="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{Binding Name}" Header="Name"/>
+                <DataGridTextColumn Binding="{Binding Gender}" Header="Gender"/>
+                <DataGridTextColumn Binding="{Binding DOB}" Header="Date Of Birth"/>
+                <DataGridTextColumn Binding="{Binding Email}" Header="Email"/>
+                <DataGridTextColumn Binding="{Binding ContactNo}" Header="Contact No"/>
+                <DataGridTemplateColumn>
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button Content=""></Button>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+        </DataGrid>
         <Popup x:Name="AddPopup" Placement="Center">
-            <Grid Background="White">
-                <views:AddEmployee Margin="0,10,10,20"/>
-                <Button Content="Cancel" Height="25" Margin="138,254,108,72" Click="BtnCancel_Click"/>
+            <Grid Background="White" Height="214" Width="223">
+                <views:AddEmployee />
+                <Button Content="Cancel" Height="25" Width="50" Click="BtnCancel_Click" Margin="112,179,61,10"/>
             </Grid>
         </Popup>
     </Grid>

@@ -7,22 +7,22 @@ using System.Threading.Tasks;
 
 namespace EmployeeManager.Models
 {
-    class EmployeeModel : ObservableObject
+    public class EmployeeModel : ObservableObject
     {
         #region PrivateMembers
 		private int _employeeId;
         private string _name;
         private string _contactNo;
-        private string _address;
+        //private string _address;
         private string _email;
-        private string _designation;
+        //private string _designation;
         private string _gender;
         private System.DateTime _dOB;
-        private String _project;
-        private String _department;
+        //private String _project;
+        //private String _department;
         private string _salary;
-        private System.DateTime _createDate;
-        private System.DateTime _lastUpdated; 
+        //private System.DateTime _createDate;
+        //private System.DateTime _lastUpdated; 
 	    #endregion
 
 
@@ -54,15 +54,15 @@ namespace EmployeeManager.Models
                 OnPropertyChanged(); 
             }
         }
-        public string Address 
-        { 
-            get { return _address; } 
-            set 
-            { 
-                _address = value;
-                OnPropertyChanged(); 
-            }
-        }
+        //public string Address 
+        //{ 
+        //    get { return _address; } 
+        //    set 
+        //    { 
+        //        _address = value;
+        //        OnPropertyChanged(); 
+        //    }
+        //}
         public string Email 
         { 
             get { return _email; } 
@@ -72,15 +72,15 @@ namespace EmployeeManager.Models
                 OnPropertyChanged(); 
             }
         }
-        public string Designation 
-        { 
-            get { return _designation; } 
-            set 
-            { 
-                _designation = value;
-                OnPropertyChanged(); 
-            }
-        }
+        //public string Designation 
+        //{ 
+        //    get { return _designation; } 
+        //    set 
+        //    { 
+        //        _designation = value;
+        //        OnPropertyChanged(); 
+        //    }
+        //}
         public string Gender 
         { 
             get { return _gender; } 
@@ -99,24 +99,24 @@ namespace EmployeeManager.Models
                 OnPropertyChanged(); 
             }
         }
-        public String Project 
-        { 
-            get { return _project; } 
-            set 
-            { 
-                _project = value;
-                OnPropertyChanged(); 
-            }
-        }
-        public String Department 
-        { 
-            get { return _department; } 
-            set 
-            { 
-                _department = value;
-                OnPropertyChanged(); 
-            }
-        }
+        //public String Project 
+        //{ 
+        //    get { return _project; } 
+        //    set 
+        //    { 
+        //        _project = value;
+        //        OnPropertyChanged(); 
+        //    }
+        //}
+        //public String Department 
+        //{ 
+        //    get { return _department; } 
+        //    set 
+        //    { 
+        //        _department = value;
+        //        OnPropertyChanged(); 
+        //    }
+        //}
         public string Salary 
         { 
             get { return _salary; } 
@@ -126,24 +126,24 @@ namespace EmployeeManager.Models
                 OnPropertyChanged(); 
             }
         }
-        public System.DateTime CreateDate 
-        { 
-            get { return _createDate; } 
-            set 
-            { 
-                _createDate = value;
-                OnPropertyChanged(); 
-            }
-        }
-        public System.DateTime LastUpdated 
-        { 
-            get { return _lastUpdated; } 
-            set 
-            { 
-                _lastUpdated = value;
-                OnPropertyChanged(); 
-            }
-        } 
+        //public System.DateTime CreateDate 
+        //{ 
+        //    get { return _createDate; } 
+        //    set 
+        //    { 
+        //        _createDate = value;
+        //        OnPropertyChanged(); 
+        //    }
+        //}
+        //public System.DateTime LastUpdated 
+        //{ 
+        //    get { return _lastUpdated; } 
+        //    set 
+        //    { 
+        //        _lastUpdated = value;
+        //        OnPropertyChanged(); 
+        //    }
+        //} 
 	#endregion
     }
 }
