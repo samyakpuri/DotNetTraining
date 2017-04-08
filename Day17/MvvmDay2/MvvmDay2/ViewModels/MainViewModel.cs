@@ -10,7 +10,7 @@ using MvvmDay2.Services;
 
 namespace MvvmDay2.ViewModels
 {
-    class MainViewModel : BaseViewModel
+    class MainViewModel : BaseViewModel, MvvmDay2.ViewModels.IMainViewModel
     {
         private IDialogService _dialogService;
         public Header Header { get; set; }
@@ -21,7 +21,7 @@ namespace MvvmDay2.ViewModels
         {
             _dialogService = dialogService;
             Header = new Header() { Title = "Hello World", Url = new Uri("../Images/logo.png",UriKind.Relative) };
-            Person = new Person() { Name = "Samyak Puri", Gender = true, Id = 1};
+            Person = new Person() { Name = "Samyak Puri", Gender = true, Id = 1, DateOfBirth = DateTime.Now.AddYears(-23)};
             AddPersonCommand = new DelegateCommand(CanExecute,Execute);
         }
 

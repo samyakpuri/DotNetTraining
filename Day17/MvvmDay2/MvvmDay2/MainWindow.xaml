@@ -5,9 +5,9 @@
         xmlns:viewmodels="clr-namespace:MvvmDay2.ViewModels"
         Title="MainWindow" Height="350" Width="525" WindowStartupLocation="CenterScreen">
     <Window.Resources>
-        <viewmodels:MainViewModel x:Key="MainViewModel"/>
+        <!--<viewmodels:MainViewModel x:Key="MainViewModel"/>-->
     </Window.Resources>
-    <Grid Margin="0,0,0,0"  DataContext="{StaticResource MainViewModel}">
+    <Grid Margin="0,0,0,0">
         <views:HeaderView HorizontalAlignment="Left" VerticalAlignment="Top"  DataContext="{Binding Header}"  Width="308" Margin="107,10,0,0"/>
         <views:PersonView HorizontalAlignment="Left" VerticalAlignment="Top"  DataContext="{Binding Person}" Width="308" Margin="107,105,0,0" Height="191"/>
         <Button Content="Save" HorizontalAlignment="Left"  VerticalAlignment="Top" Width="75" Command="{Binding AddPersonCommand}" Margin="225,262,0,0"/>

@@ -1,4 +1,5 @@
-﻿using MvvmDay2.ViewModels;
+﻿using MvvmDay2.Services;
+using MvvmDay2.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -23,7 +24,9 @@ namespace MvvmDay2
     {
         public MainWindow()
         {
+            var mainViewModel = new MainViewModel(new DialogService());
             InitializeComponent();
+            this.DataContext = mainViewModel;
         }
     }
 }
