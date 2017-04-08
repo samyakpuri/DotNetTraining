@@ -95,6 +95,7 @@
     </Compile>
     <Compile Include="Mappers\EmployeeMapper.cs" />
     <Compile Include="Services\DialogService.cs" />
+    <Compile Include="Validators\MandatoryFieldRule.cs" />
     <Compile Include="ViewModels\BaseViewModel.cs" />
     <Compile Include="ViewModels\EmployeeViewModel.cs" />
     <Compile Include="Views\AddEmployee.xaml.cs">

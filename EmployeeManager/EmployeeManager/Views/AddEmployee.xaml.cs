@@ -25,11 +25,5 @@ namespace EmployeeManager.Views
         {
             InitializeComponent();
         }
-
-        private void BtnSave_Click(object sender, RoutedEventArgs e)
-        {
-            var db = new EmployeeManagementEntities();
-            
-        }
     }
 }
