@@ -1,4 +1,7 @@
-﻿using System;
+﻿using EmployeeManager.DataModel;
+using EmployeeManager.Mappers;
+using EmployeeManager.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,14 +23,34 @@ namespace EmployeeManager
     /// </summary>
     public partial class MainWindow : Window
     {
+        EmployeeManagementEntities db = new EmployeeManagementEntities();
+        private List<EmployeeModel> _employees { get; set; }
         public MainWindow()
         {
             InitializeComponent();
+            LoadGrid();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void LoadGrid()
         {
+            _employees = new List<EmployeeModel>();
+            var tempEmployees = db.Employees.Where(s=>s.Active.Equals("Active")).ToList();
+            foreach (var employee in tempEmployees)
+            {
+                EmployeeModel emp = new EmployeeModel();
+                EmployeeMapper.Map(employee, emp);
+                _employees.Add(emp);    
+            }
+        }
 
+        private void BtnAdd_Click(object sender, RoutedEventArgs e)
+        {
+            AddPopup.IsOpen = true;
+        }
+
+        private void BtnCancel_Click(object sender, RoutedEventArgs e)
+        {
+            AddPopup.IsOpen = false;
         }
     }
 }
