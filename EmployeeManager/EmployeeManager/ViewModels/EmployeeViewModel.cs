@@ -21,12 +21,17 @@ namespace EmployeeManager.ViewModels
         {
             _dialogService = dialogService;
             AddEmployeeCommand = new DelegateCommand(CanExecute, Execute);
+            Employee = new EmployeeModel();
         }
 
         private void Execute(object obj)
         {
             Employee employee = new Employee();
-            EmployeeMapper.MapBack(employee, Employee);
+            EmployeeModel emp= obj as EmployeeModel;
+            EmployeeMapper.MapBack(employee, emp);
+            var db = new EmployeeManagementEntities();
+            db.Employees.Add(employee);
+            db.SaveChanges();
         }
 
         private bool CanExecute(object obj)

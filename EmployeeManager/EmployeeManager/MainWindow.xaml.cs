@@ -1,6 +1,8 @@
 ﻿using EmployeeManager.DataModel;
 using EmployeeManager.Mappers;
 using EmployeeManager.Models;
+using EmployeeManager.Services;
+using EmployeeManager.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -29,6 +31,8 @@ namespace EmployeeManager
         {
             InitializeComponent();
             LoadGrid();
+            var employeeViewModel = new EmployeeViewModel(new DialogService());
+            this.DataContext = employeeViewModel;
         }
 
         private void LoadGrid()

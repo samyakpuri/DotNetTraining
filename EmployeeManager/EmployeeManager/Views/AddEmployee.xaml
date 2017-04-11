@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:Validators="clr-namespace:EmployeeManager.Validators"
              mc:Ignorable="d" 
              d:DesignHeight="195" d:DesignWidth="189">
     <Grid Background="White">
@@ -19,17 +20,65 @@
                 <Label Content="Salary"/>
             </StackPanel>
             <StackPanel Orientation="Vertical" Width="94">
-                <TextBox Height="26"/>
-                <TextBox Height="26"/>
-                <TextBox Height="26"/>
-                <TextBox Height="26"/>
-                <TextBox Height="26"/>
-                <TextBox Height="26"/>
+                <TextBox Height="26">
+                    <TextBox.Text>
+                        <Binding Path="Employee.Name">
+                            <Binding.ValidationRules>
+                                <Validators:MandatoryFieldRule/>
+                            </Binding.ValidationRules>
+                        </Binding>
+                    </TextBox.Text>
+                </TextBox>
+                <TextBox Height="26">
+                    <TextBox.Text>
+                        <Binding Path="Employee.Gender">
+                            <Binding.ValidationRules>
+                                <Validators:MandatoryFieldRule/>
+                            </Binding.ValidationRules>
+                        </Binding>
+                    </TextBox.Text>
+                </TextBox>
+                <TextBox Height="26">
+                    <TextBox.Text>
+                        <Binding Path="Employee.DOB">
+                            <Binding.ValidationRules>
+                                <Validators:MandatoryFieldRule/>
+                            </Binding.ValidationRules>
+                        </Binding>
+                    </TextBox.Text>
+                </TextBox>
+                <TextBox Height="26">
+                    <TextBox.Text>
+                        <Binding Path="Employee.ContactNo">
+                            <Binding.ValidationRules>
+                                <Validators:MandatoryFieldRule/>
+                            </Binding.ValidationRules>
+                        </Binding>
+                    </TextBox.Text>
+                </TextBox>
+                <TextBox Height="26">
+                    <TextBox.Text>
+                        <Binding Path="Employee.Email">
+                            <Binding.ValidationRules>
+                                <Validators:MandatoryFieldRule/>
+                            </Binding.ValidationRules>
+                        </Binding>
+                    </TextBox.Text>
+                </TextBox>
+                <TextBox Height="26">
+                    <TextBox.Text>
+                        <Binding Path="Employee.Salary">
+                            <Binding.ValidationRules>
+                                <Validators:MandatoryFieldRule/>
+                            </Binding.ValidationRules>
+                        </Binding>
+                    </TextBox.Text>
+                </TextBox>
                 <!--<TextBox Height="26"/>
                 <TextBox Height="26"/>
                 <TextBox Height="26"/>-->
             </StackPanel>
         </StackPanel>
-        <Button Content="Save" Click="BtnSave_Click" Height="25" Width="50" Margin="22,170,117,0"/>
+        <Button Content="Save" Command="{Binding AddEmployeeCommand}" CommandParameter="{Binding}" Height="25" Width="50" Margin="22,170,117,0"/>
     </Grid>
 </UserControl>
