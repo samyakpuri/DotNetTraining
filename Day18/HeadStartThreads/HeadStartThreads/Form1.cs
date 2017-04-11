@@ -44,8 +44,8 @@ namespace HeadStartThreads
             //Stopwatch watch = new Stopwatch();
             //watch.Start();
             int num = Convert.ToInt32(number);
-            int end = (num + 1) * 500;
-            for (int i = num*500; i < end; i++)
+            int end = (num + 1) * 50;
+            for (int i = num*50; i < end; i++)
             {
                 Console.WriteLine(i);
             }
@@ -56,6 +56,25 @@ namespace HeadStartThreads
             //watch.Stop();
             //MessageBox.Show(watch.ElapsedMilliseconds.ToString());
             this.Invoke(new MethodInvoker(() => lblTime.Text = (DateTime.Now - start).ToString()));
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Stopwatch watch = Stopwatch.StartNew();
+            var task = Task.Factory.StartNew(() => PrintSleep());
+            var task2 = Task.Factory.StartNew(() => PrintSleep());
+            var task3 = Task.Factory.StartNew(() => PrintSleep());
+
+            Task.WaitAll(task, task2, task3);
+            watch.Stop();
+            MessageBox.Show(watch.ElapsedMilliseconds.ToString());
+        }
+
+        private void PrintSleep()
+        {
+            Thread.Sleep(1000);
+            Console.WriteLine("HI");
+            throw new Exception("gghgh");
         }
     }
 }
