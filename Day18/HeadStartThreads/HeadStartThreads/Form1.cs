@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Diagnostics;
 using System.Drawing;
+using System.Dynamic;
 using System.Linq;
 using System.Text;
 using System.Threading;
@@ -122,6 +123,20 @@ namespace HeadStartThreads
         {
             dynamic logger = Loggerfactory.GetLogger(LogType.Text);
             logger.Log("This is Text");
+
+            dynamic dynamicObject = new ExpandoObject();
+            dynamicObject.Message = "This is new dynamic property";
+
+            dynamicObject.Log = new Action<string>((str)=>Console.WriteLine(str));
+
+            dynamicObject.Log(dynamicObject.Message);
+        }
+
+        private void btnTuple_Click(object sender, EventArgs e)
+        {
+            Tuple<int> tuple = new Tuple<int>(1);
+            Tuple<int, int> tuple2 = new Tuple<int, int>(1, 2);
+            Tuple<int, string, int, int> tuple4 = new Tuple<int, string, int, int>(1, "2", 3, 4);
         }
 
 

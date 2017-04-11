@@ -34,6 +34,7 @@
             this.btnParallel = new System.Windows.Forms.Button();
             this.btnCancelTask = new System.Windows.Forms.Button();
             this.btnDynamicObject = new System.Windows.Forms.Button();
+            this.btnTuple = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnLongSynchronusTask
@@ -87,7 +88,7 @@
             // 
             // btnDynamicObject
             // 
-            this.btnDynamicObject.Location = new System.Drawing.Point(90, 190);
+            this.btnDynamicObject.Location = new System.Drawing.Point(40, 190);
             this.btnDynamicObject.Name = "btnDynamicObject";
             this.btnDynamicObject.Size = new System.Drawing.Size(88, 23);
             this.btnDynamicObject.TabIndex = 5;
@@ -95,11 +96,22 @@
             this.btnDynamicObject.UseVisualStyleBackColor = true;
             this.btnDynamicObject.Click += new System.EventHandler(this.btnDynamicObject_Click);
             // 
+            // btnTuple
+            // 
+            this.btnTuple.Location = new System.Drawing.Point(137, 190);
+            this.btnTuple.Name = "btnTuple";
+            this.btnTuple.Size = new System.Drawing.Size(88, 23);
+            this.btnTuple.TabIndex = 6;
+            this.btnTuple.Text = "Tuples";
+            this.btnTuple.UseVisualStyleBackColor = true;
+            this.btnTuple.Click += new System.EventHandler(this.btnTuple_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 262);
+            this.Controls.Add(this.btnTuple);
             this.Controls.Add(this.btnDynamicObject);
             this.Controls.Add(this.btnCancelTask);
             this.Controls.Add(this.btnParallel);
@@ -121,6 +133,7 @@
         private System.Windows.Forms.Button btnParallel;
         private System.Windows.Forms.Button btnCancelTask;
         private System.Windows.Forms.Button btnDynamicObject;
+        private System.Windows.Forms.Button btnTuple;
     }
 }
 
