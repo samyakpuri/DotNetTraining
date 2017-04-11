@@ -76,5 +76,53 @@ namespace HeadStartThreads
             Console.WriteLine("HI");
             throw new Exception("gghgh");
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Stopwatch watch = Stopwatch.StartNew();
+            for (int i = 0; i < 10000; i++)
+            {
+                Console.WriteLine(i);
+            }
+            watch.Stop();
+            MessageBox.Show(watch.ElapsedMilliseconds.ToString());
+            Console.WriteLine("hiyaaa");
+            watch.Reset();
+            watch.Start();
+            Parallel.For(0, 1000, i => Console.WriteLine(i));
+            MessageBox.Show(watch.ElapsedMilliseconds.ToString());
+            Console.WriteLine("hiyaaa");
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            CancellationTokenSource tokenSource = new CancellationTokenSource();
+            var token = tokenSource.Token;
+            var task = Task.Factory.StartNew(() =>
+                {
+                    for (int i = 0; i < 10000; i++)
+                    {
+                        if (token.IsCancellationRequested)
+                        {
+                            Console.WriteLine("Byeeee");
+                            return;
+                        }
+                        else
+                            Console.WriteLine(i);
+                    }
+                    
+                },token);
+
+            tokenSource.Cancel();
+
+        }
+
+
     }
 }
