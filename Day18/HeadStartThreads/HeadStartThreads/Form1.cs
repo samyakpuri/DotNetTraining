@@ -58,7 +58,7 @@ namespace HeadStartThreads
             this.Invoke(new MethodInvoker(() => lblTime.Text = (DateTime.Now - start).ToString()));
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnTask_Click(object sender, EventArgs e)
         {
             Stopwatch watch = Stopwatch.StartNew();
             var task = Task.Factory.StartNew(() => PrintSleep());
@@ -77,7 +77,7 @@ namespace HeadStartThreads
             throw new Exception("gghgh");
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void btnParallel_Click(object sender, EventArgs e)
         {
             Stopwatch watch = Stopwatch.StartNew();
             for (int i = 0; i < 10000; i++)
@@ -95,12 +95,7 @@ namespace HeadStartThreads
 
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button3_Click(object sender, EventArgs e)
+        private void btnCancelTask_Click(object sender, EventArgs e)
         {
             CancellationTokenSource tokenSource = new CancellationTokenSource();
             var token = tokenSource.Token;
@@ -123,6 +118,49 @@ namespace HeadStartThreads
 
         }
 
+        private void btnDynamicObject_Click(object sender, EventArgs e)
+        {
+            dynamic logger = Loggerfactory.GetLogger(LogType.Text);
+            logger.Log("This is Text");
+        }
 
+
+    }
+
+
+
+    class Loggerfactory
+    {
+        //Factory Pattern
+        public static object GetLogger(LogType logType)
+        {
+            switch(logType)
+            {
+                case LogType.Db: return new DbLogger();
+                default: return new TextLogger();
+            }
+        }
+    }
+
+    enum LogType
+    {
+        Text,
+        Db
+    }
+
+    class DbLogger
+    {
+        public void Log(string message)
+        {
+
+        }
+    }
+
+    class TextLogger
+    {
+        public void Log(string message)
+        {
+
+        }
     }
 }

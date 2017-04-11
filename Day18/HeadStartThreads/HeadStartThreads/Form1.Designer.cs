@@ -30,9 +30,10 @@
         {
             this.btnLongSynchronusTask = new System.Windows.Forms.Button();
             this.lblTime = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnTask = new System.Windows.Forms.Button();
+            this.btnParallel = new System.Windows.Forms.Button();
+            this.btnCancelTask = new System.Windows.Forms.Button();
+            this.btnDynamicObject = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnLongSynchronusTask
@@ -54,49 +55,59 @@
             this.lblTime.TabIndex = 1;
             this.lblTime.Text = "label1";
             // 
-            // button1
+            // btnTask
             // 
-            this.button1.Location = new System.Drawing.Point(89, 153);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnTask.Location = new System.Drawing.Point(90, 123);
+            this.btnTask.Name = "btnTask";
+            this.btnTask.Size = new System.Drawing.Size(75, 23);
+            this.btnTask.TabIndex = 2;
+            this.btnTask.Text = "Task";
+            this.btnTask.UseVisualStyleBackColor = true;
+            this.btnTask.Click += new System.EventHandler(this.btnTask_Click);
             // 
-            // button2
+            // btnParallel
             // 
-            this.button2.Location = new System.Drawing.Point(46, 191);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.btnParallel.Location = new System.Drawing.Point(40, 161);
+            this.btnParallel.Name = "btnParallel";
+            this.btnParallel.Size = new System.Drawing.Size(75, 23);
+            this.btnParallel.TabIndex = 3;
+            this.btnParallel.Text = "Parallel";
+            this.btnParallel.UseVisualStyleBackColor = true;
+            this.btnParallel.Click += new System.EventHandler(this.btnParallel_Click);
             // 
-            // button3
+            // btnCancelTask
             // 
-            this.button3.Location = new System.Drawing.Point(145, 191);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(88, 23);
-            this.button3.TabIndex = 4;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.btnCancelTask.Location = new System.Drawing.Point(137, 161);
+            this.btnCancelTask.Name = "btnCancelTask";
+            this.btnCancelTask.Size = new System.Drawing.Size(88, 23);
+            this.btnCancelTask.TabIndex = 4;
+            this.btnCancelTask.Text = "Cancel Task";
+            this.btnCancelTask.UseVisualStyleBackColor = true;
+            this.btnCancelTask.Click += new System.EventHandler(this.btnCancelTask_Click);
+            // 
+            // btnDynamicObject
+            // 
+            this.btnDynamicObject.Location = new System.Drawing.Point(90, 190);
+            this.btnDynamicObject.Name = "btnDynamicObject";
+            this.btnDynamicObject.Size = new System.Drawing.Size(88, 23);
+            this.btnDynamicObject.TabIndex = 5;
+            this.btnDynamicObject.Text = "Dynamic Object";
+            this.btnDynamicObject.UseVisualStyleBackColor = true;
+            this.btnDynamicObject.Click += new System.EventHandler(this.btnDynamicObject_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 262);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnDynamicObject);
+            this.Controls.Add(this.btnCancelTask);
+            this.Controls.Add(this.btnParallel);
+            this.Controls.Add(this.btnTask);
             this.Controls.Add(this.lblTime);
             this.Controls.Add(this.btnLongSynchronusTask);
             this.Name = "Form1";
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -106,9 +117,10 @@
 
         private System.Windows.Forms.Button btnLongSynchronusTask;
         private System.Windows.Forms.Label lblTime;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnTask;
+        private System.Windows.Forms.Button btnParallel;
+        private System.Windows.Forms.Button btnCancelTask;
+        private System.Windows.Forms.Button btnDynamicObject;
     }
 }
 
