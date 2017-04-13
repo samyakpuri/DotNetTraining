@@ -1,16 +1,17 @@
 ﻿using EmployeeManager.Framework;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace EmployeeManager.Models
 {
-    public class EmployeeModel : ObservableObject
+    public class EmployeeModel : ObservableObject, IDataErrorInfo
     {
         #region PrivateMembers
-		private int _employeeId;
+        private int _employeeId;
         private string _name;
         private string _contactNo;
         //private string _address;
@@ -23,35 +24,35 @@ namespace EmployeeManager.Models
         private string _salary;
         //private System.DateTime _createDate;
         //private System.DateTime _lastUpdated; 
-	    #endregion
+        #endregion
 
 
         #region PublicProperties
-		public int EmployeeId 
-        { 
-            get { return _employeeId; } 
-            set 
-            { 
+        public int EmployeeId
+        {
+            get { return _employeeId; }
+            set
+            {
                 _employeeId = value;
-                OnPropertyChanged(); 
+                OnPropertyChanged();
             }
         }
-        public string Name 
-        { 
-            get { return _name ; } 
-            set 
-            { 
+        public string Name
+        {
+            get { return _name; }
+            set
+            {
                 _name = value;
-                OnPropertyChanged(); 
+                OnPropertyChanged();
             }
         }
-        public string ContactNo 
-        { 
-            get { return _contactNo; } 
-            set 
-            { 
+        public string ContactNo
+        {
+            get { return _contactNo; }
+            set
+            {
                 _contactNo = value;
-                OnPropertyChanged(); 
+                OnPropertyChanged();
             }
         }
         //public string Address 
@@ -63,13 +64,13 @@ namespace EmployeeManager.Models
         //        OnPropertyChanged(); 
         //    }
         //}
-        public string Email 
-        { 
-            get { return _email; } 
-            set 
-            { 
+        public string Email
+        {
+            get { return _email; }
+            set
+            {
                 _email = value;
-                OnPropertyChanged(); 
+                OnPropertyChanged();
             }
         }
         //public string Designation 
@@ -81,22 +82,22 @@ namespace EmployeeManager.Models
         //        OnPropertyChanged(); 
         //    }
         //}
-        public string Gender 
-        { 
-            get { return _gender; } 
-            set 
-            { 
+        public string Gender
+        {
+            get { return _gender; }
+            set
+            {
                 _gender = value;
-                OnPropertyChanged(); 
+                OnPropertyChanged();
             }
         }
-        public System.DateTime DOB 
-        { 
-            get { return _dOB; } 
-            set 
-            { 
+        public System.DateTime DOB
+        {
+            get { return _dOB; }
+            set
+            {
                 _dOB = value;
-                OnPropertyChanged(); 
+                OnPropertyChanged();
             }
         }
         //public String Project 
@@ -117,13 +118,13 @@ namespace EmployeeManager.Models
         //        OnPropertyChanged(); 
         //    }
         //}
-        public string Salary 
-        { 
-            get { return _salary; } 
-            set 
-            { 
+        public string Salary
+        {
+            get { return _salary; }
+            set
+            {
                 _salary = value;
-                OnPropertyChanged(); 
+                OnPropertyChanged();
             }
         }
         //public System.DateTime CreateDate 
@@ -144,6 +145,45 @@ namespace EmployeeManager.Models
         //        OnPropertyChanged(); 
         //    }
         //} 
-	#endregion
+        #endregion
+
+        public string Error
+        {
+            get;
+            private set;
+        }
+
+        public string this[string columnName]
+        {
+            get
+            {
+                switch (columnName)
+                {
+                    case "Name":
+                        if (String.IsNullOrEmpty(Name))
+                            return "Field is Mandatory";
+                        break;
+                    case "ContactNo":
+                        if (String.IsNullOrEmpty(ContactNo))
+                            return "Field is Mandatory";
+                        break;
+                    case "Email":
+                        if (String.IsNullOrEmpty(Email))
+                            return "Field is Mandatory";
+                        break;
+                    case "Gender":
+                        if (String.IsNullOrEmpty(Gender))
+                            return "Field is Mandatory";
+                        break;
+                    case "Salary":
+                        if (String.IsNullOrEmpty(Salary))
+                            return "Field is Mandatory";
+                        break;
+                    default: return null;
+                }
+                return String.Empty;
+                
+            }
+        }
     }
 }

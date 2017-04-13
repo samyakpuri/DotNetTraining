@@ -6,6 +6,29 @@
              xmlns:Validators="clr-namespace:EmployeeManager.Validators"
              mc:Ignorable="d" 
              d:DesignHeight="195" d:DesignWidth="189">
+    <UserControl.Resources>
+        <Style TargetType="TextBox">
+            <Setter Property="Validation.ErrorTemplate">
+                <Setter.Value>
+                    <ControlTemplate>
+                        <StackPanel>
+                            <Border BorderBrush="DarkRed" BorderThickness="2">
+                                <AdornedElementPlaceholder x:Name="errorControl" />
+                            </Border>
+                        </StackPanel>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            <Style.Triggers>
+                <Trigger Property="Validation.HasError" Value="True">
+                    <Setter Property="ToolTip" Value="{Binding RelativeSource={RelativeSource Self}, Path=(Validation.Errors)[0].ErrorContent}" />
+                    <Setter Property="BorderBrush" Value="Red"/>
+                    <Setter Property="BorderThickness" Value="1"/>
+                    <Setter Property="Background" Value="#11FF0000"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+    </UserControl.Resources>
     <Grid Background="White">
         <StackPanel Orientation="Horizontal" >
             <StackPanel Orientation="Vertical" Width="78">
@@ -20,60 +43,12 @@
                 <Label Content="Salary"/>
             </StackPanel>
             <StackPanel Orientation="Vertical" Width="94">
-                <TextBox Height="26">
-                    <TextBox.Text>
-                        <Binding Path="Employee.Name">
-                            <Binding.ValidationRules>
-                                <Validators:MandatoryFieldRule/>
-                            </Binding.ValidationRules>
-                        </Binding>
-                    </TextBox.Text>
-                </TextBox>
-                <TextBox Height="26">
-                    <TextBox.Text>
-                        <Binding Path="Employee.Gender">
-                            <Binding.ValidationRules>
-                                <Validators:MandatoryFieldRule/>
-                            </Binding.ValidationRules>
-                        </Binding>
-                    </TextBox.Text>
-                </TextBox>
-                <TextBox Height="26">
-                    <TextBox.Text>
-                        <Binding Path="Employee.DOB">
-                            <Binding.ValidationRules>
-                                <Validators:MandatoryFieldRule/>
-                            </Binding.ValidationRules>
-                        </Binding>
-                    </TextBox.Text>
-                </TextBox>
-                <TextBox Height="26">
-                    <TextBox.Text>
-                        <Binding Path="Employee.ContactNo">
-                            <Binding.ValidationRules>
-                                <Validators:MandatoryFieldRule/>
-                            </Binding.ValidationRules>
-                        </Binding>
-                    </TextBox.Text>
-                </TextBox>
-                <TextBox Height="26">
-                    <TextBox.Text>
-                        <Binding Path="Employee.Email">
-                            <Binding.ValidationRules>
-                                <Validators:MandatoryFieldRule/>
-                            </Binding.ValidationRules>
-                        </Binding>
-                    </TextBox.Text>
-                </TextBox>
-                <TextBox Height="26">
-                    <TextBox.Text>
-                        <Binding Path="Employee.Salary">
-                            <Binding.ValidationRules>
-                                <Validators:MandatoryFieldRule/>
-                            </Binding.ValidationRules>
-                        </Binding>
-                    </TextBox.Text>
-                </TextBox>
+                <TextBox Height="26" Text="{Binding Employee.Name,UpdateSourceTrigger=Default,ValidatesOnDataErrors=True}"/>
+                <TextBox Height="26" Text="{Binding Employee.Gender,UpdateSourceTrigger=LostFocus,ValidatesOnDataErrors=True}"/>
+                <DatePicker Height="26" Text="{Binding Employee.DOB,UpdateSourceTrigger=LostFocus,ValidatesOnDataErrors=True}"/>
+                <TextBox Height="26" Text="{Binding Employee.ContactNo,UpdateSourceTrigger=LostFocus,ValidatesOnDataErrors=True}"/>
+                <TextBox Height="26" Text="{Binding Employee.Email,UpdateSourceTrigger=LostFocus,ValidatesOnDataErrors=True}"/>
+                <TextBox Height="26" Text="{Binding Employee.Salary,UpdateSourceTrigger=LostFocus,ValidatesOnDataErrors=True}"/>
                 <!--<TextBox Height="26"/>
                 <TextBox Height="26"/>
                 <TextBox Height="26"/>-->

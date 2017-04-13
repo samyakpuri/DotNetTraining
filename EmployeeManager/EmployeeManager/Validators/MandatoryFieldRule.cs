@@ -11,7 +11,7 @@ namespace EmployeeManager.Validators
     {
         public override ValidationResult Validate(object value, System.Globalization.CultureInfo cultureInfo)
         {
-            if (value.ToString() == "")
+            if (value.ToString() == "" || value.ToString() == null)
                 return new ValidationResult(false, "Field is Mandatory");
             return new ValidationResult(true, null);
         }

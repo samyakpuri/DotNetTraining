@@ -4,9 +4,17 @@
         xmlns:views="clr-namespace:EmployeeManager.Views"
         xmlns:models="clr-namespace:EmployeeManager.Models"
         xmlns:viewmodels="clr-namespace:EmployeeManager.ViewModels"
+        xmlns:Validators="clr-namespace:EmployeeManager.Validators"
         Title="Home" Height="350" Width="525" WindowStartupLocation="CenterScreen">
     <Window.Resources>
         <!--<viewmodels:EmployeeViewModel x:Key="EmployeeViewModel"/>-->
+        
+        <ControlTemplate x:Key="ControlTemplate" TargetType="{x:Type Button}">
+            <Grid>
+                <Ellipse Fill="#11FF0000" Height="{TemplateBinding Height}" Width="{TemplateBinding Width}" Stroke="DarkRed" StrokeThickness="2"/>
+                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            </Grid>
+        </ControlTemplate>
     </Window.Resources>
     <Grid>
         <Button Content="Add" VerticalAlignment="Top" HorizontalAlignment="Left" Width="55" Margin="34,10,0,0" Click="BtnAdd_Click"/>
