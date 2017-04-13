@@ -1,4 +1,6 @@
-﻿using System;
+﻿using EmployeeManagerPrism.Core.Models;
+using EmployeeManagerPrism.DataModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;

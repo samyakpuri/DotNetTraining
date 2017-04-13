@@ -4,6 +4,6 @@
         xmlns:prism="http://prismlibrary.com/"
         Title="Shell" Height="350" Width="525">
     <DockPanel LastChildFill="True">
-        <ContentControl prism:RegionManager.RegionName="ContentRegion" />
+        <ContentControl prism:RegionManager.RegionName="ListRegion" />
     </DockPanel>
 </Window>
